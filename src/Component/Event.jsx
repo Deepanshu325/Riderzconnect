@@ -45,21 +45,22 @@ const Event = () => {
       </div>
 
       {/* Right Div */}
-      <div className="w-full md:w-1/2 h-56 md:h-56 mt-6 md:mt-0 flex flex-row items-center bg-black rounded-lg p-6 gap-12">
+      
+      <div className="w-full md:w-1/2 h-56 flex flex-row bg-black">
         {/* Days */}
-        <div className="text-center  lg:ml-16">
+        <div className="text-center   w-1/3 content-center">
           <div className="text-3xl font-bold text-white">5</div>
-          <div className="text-2xl text-white mt-4">Days</div>
+          <div className="text-2xl text-white ">Days</div>
         </div>
         {/* Hours */}
-        <div className="text-center  ">
+        <div className="text-center   w-1/3 content-center">
           <div className="text-3xl font-bold text-white">12</div>
-          <div className="text-2xl text-white mt-4">Hours</div>
+          <div className="text-2xl text-white ">Hours</div>
         </div>
         {/* Seconds */}
-        <div className="text-center ">
+        <div className="text-center  w-1/3 content-center">
           <div className="text-3xl font-bold text-white">45</div>
-          <div className="text-2xl text-white mt-4">Seconds</div>
+          <div className="text-2xl text-white ">Seconds</div>
         </div>
       </div>
     </div>

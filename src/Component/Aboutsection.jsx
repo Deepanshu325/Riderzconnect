@@ -92,7 +92,7 @@ const AboutSection = () => {
               </div>
               {/* Item 4 */}
               <div className="flex items-start justify-center w-full md:w-64 mt-2 sm:mb-2 md:mt-0">
-                <button className="pl-3 pr-3 pt-2 pb-2 max-w-40 mt-4 bg-yellow-500 font-bold hover:bg-white hover:text-yellow-500 w-full text-center">
+                <button className="pl-3 pr-3 pt-2 pb-2 max-w-40 mt-4 bg-yellow-500 font-bold hover:bg-white hover:text-yellow-500 w-full text-center rounded-lg">
                   VIEW HISTORY
                 </button>
               </div>

@@ -39,7 +39,7 @@ const NavigationBar = () => {
                   
                   className="flex items-center text-white hover:bg-gray-700 px-3 py-2 rounded-md text-sm font-medium"
                 >
-                  Home
+                  HOME
                 </button>
                 </Link>
               </li>
@@ -50,7 +50,7 @@ const NavigationBar = () => {
                   
                   className="flex items-center text-white hover:bg-gray-700 px-3 py-2 rounded-md text-sm font-medium"
                 >
-                  Events
+                  EVENTS
                 </button>
                 </Link>
               </li>
@@ -60,7 +60,7 @@ const NavigationBar = () => {
                   onClick={() => toggleDropdown('rides')}
                   className="flex items-center text-white hover:bg-gray-700 px-3 py-2 rounded-md text-sm font-medium"
                 >
-                  Rides
+                  RIDES
                 </button>
               </li>
 
@@ -69,7 +69,7 @@ const NavigationBar = () => {
                   onClick={() => toggleDropdown('gallery')}
                   className="flex items-center text-white hover:bg-gray-700 px-3 py-2 rounded-md text-sm font-medium"
                 >
-                  More
+                  MORE
                   <span
                     className={`ml-2 transform transition-transform ${
                       dropdownOpen.gallery ? 'rotate-180' : 'rotate-0'
@@ -110,13 +110,13 @@ const NavigationBar = () => {
               to="/signup"
               className="bg-yellow-500 text-white hover:bg-Yellow-600 px-3 py-2 rounded-md text-sm font-medium"
             >
-              Signup
+              SIGNUP
             </Link>
             <Link
               to="/login"
               className="text-white border-2 border-Yellow-500 hover:bg-Yellow-500 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
             >
-              Login
+              LOGIN
             </Link>
           </div>
 
@@ -143,37 +143,37 @@ const NavigationBar = () => {
                 to="/home"
                 className="block text-white px-4 py-2 text-lg hover:bg-gray-600"
               >
-                Home
+                HOME
               </Link>
               <Link
                 to="/events"
                 className="block text-white px-4 py-2 text-lg hover:bg-gray-600"
               >
-                Events
+                EVENTS
               </Link>
               <Link
                 to="/gallery"
                 className="block text-white px-4 py-2 text-lg hover:bg-gray-600"
               >
-                Rides
+                RIDES
               </Link>
               <Link
                 to="/login"
                 className="block text-white px-4 py-2 text-lg hover:bg-gray-600"
               >
-                More
+                MORE
               </Link>
               <Link
                 to="/login"
                 className="block text-white px-4 py-2 text-sm hover:bg-gray-600"
               >
-                Login
+                LOGIN
               </Link>
               <Link
                 to="/signup"
                 className="block text-white px-4 py-2 text-sm hover:bg-gray-600"
               >
-                Signup
+                SIGNUP
               </Link>
             </div>
           </div>

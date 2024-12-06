@@ -21,7 +21,7 @@ const FullBackgroundCard = () => {
 
           {/* Right Section with Register Button and Get Information */}
           <div className="flex flex-col items-end relative left-80 bottom-6">
-            <button className="bg-yellow-500 text-black px-2 py-2 rounded-sm font-semibold mb-4">
+            <button className="bg-yellow-500 text-black px-2 py-2 rounded-lg font-semibold mb-4">
               Register & Ride
             </button>
             <span className="text-yellow-400 cursor-pointer ">Get Information →</span>

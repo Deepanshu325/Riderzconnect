@@ -2,7 +2,6 @@ import React from 'react'
 import PhotoCarousel from '../Component/PhotoCarousel'
 import RatingContainer from '../Component/RatingContainer'
 import Descriptioncard from '../Component/Descriptioncard'
-import StickyPriceBar from '../Component/StickyPriceBar'
 import Footer from "../Component/Footer"
 import CardLayout from '../Component/Cardlayout'
 

@@ -40,19 +40,19 @@ const Mainhome = () => {
       {/* Overlay Content */}
       <div className="h-screen absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center overflow-hidden " >
         <div className="text-center text-white px-6">
-          <h1 className="text-6xl lg:text-9xl font-bold mb-4 text-black opacity-50"  data-aos="fade-left">RIDERHOOD</h1>
+          <h1 className="text-6xl lg:text-9xl font-bold mb-4 text-yellow-500 opacity-70"  data-aos="fade-left">RIDERHOOD</h1>
           <div className='lg:-translate-y-16 -translate-y-12'>
-            <p className='text-yellow-500 lg:text-lg font-bold'  data-aos="fade-right">WELCOME TO RIDERHOOD</p>
-            <p className='text-white font-bold text-2xl w-[40vh] lg:text-6xl lg:w-[130vh] mx-auto '  data-aos="fade-right">We'r Not Only Riding Club, We'Are Team Of Adventure Life</p>
+            <p className='text-black lg:text-3xl font-bold'  data-aos="fade-right">WELCOME TO RIDERZCONNECT</p>
+            <p className='text-white font-bold text-2xl w-[40vh] lg:text-5xl lg:w-[140vh] mx-auto '  data-aos="fade-right">We'r Not Only Riding Club, We'Are Team Of Adventure Life</p>
           <p className="text-base mb-6 inline-block w-[40vh]  lg:w-[77vh] text-gray-400 text-center "  data-aos="fade-left">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat Duis aute irure dolor
           </p>
-          <div className='w-[40vh] lg:w-[60vh] flex  mx-auto'>
+          <div className='w-[40vh] lg:w-[60vh] flex  mx-auto gap-2'>
             <div className=' lg:w-30 mx-auto'  data-aos="fade-right">
-          <button className='p-5 bg-yellow-500 font-bold hover:bg-white hover:text-yellow-500'>CONTACT US</button>
+          <button className='p-2 lg:p-5 rounded-lg bg-yellow-500 font-bold hover:bg-white hover:text-yellow-500'>CONTACT US</button>
           </div>
           <div className='w-30 mx-auto'  data-aos="fade-left">
-          <button className='p-5 bg-white text-yellow-500 font-bold hover:bg-yellow-500 hover:text-white'>WATCH INTRO</button>
+          <button className='p-2 lg:p-5 rounded-lg bg-white text-yellow-500 font-bold hover:bg-yellow-500 hover:text-white'>WATCH INTRO</button>
           </div>
           </div>
           </div>
