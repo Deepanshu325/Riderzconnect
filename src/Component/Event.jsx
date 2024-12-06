@@ -2,7 +2,7 @@ import React from 'react';
 
 const Event = () => {
   return (
-    <div className='bg-white relative sm:bottom-40 lg:w-[190vh] mx-auto rounded-lg overflow-hidden'>
+    <div className='bg-white relative lg:w-[190vh] mx-auto rounded-lg overflow-hidden'>
     <div className="flex flex-col  md:flex-row justify-between items-start bg-black/80 shadow-lg rounded-lg p-6">
         
       {/* Left Div */}

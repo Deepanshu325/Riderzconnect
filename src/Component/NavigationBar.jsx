@@ -146,6 +146,12 @@ const NavigationBar = () => {
                 Home
               </Link>
               <Link
+                to="/events"
+                className="block text-white px-4 py-2 text-lg hover:bg-gray-600"
+              >
+                Events
+              </Link>
+              <Link
                 to="/gallery"
                 className="block text-white px-4 py-2 text-lg hover:bg-gray-600"
               >
