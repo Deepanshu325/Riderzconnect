@@ -12,12 +12,14 @@ import Workshops from './Pages/Workshops';
 import AdventurePark1 from './Pages/AdventurePark1';
 import Mainhome from './Pages/Mainhome';
 import ScrollToTop from './Component/Scrolltotop';
+import ClickToTop from './Component/ClicktoTop';
 
 function App() {
   return (
     <div className="App">
       <NavigationBar/>
       <ScrollToTop/>
+      <ClickToTop/>
       <Routes>
         <Route path="/" element={<Home/>}/>
         <Route path="/events" element={<Home2/>}/>
