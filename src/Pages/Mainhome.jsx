@@ -1,5 +1,5 @@
 import React from 'react'
-import video from "../Assets/Video/PPAR - WS2024 - Landing Page Movie.mp4"
+import video from "../Assets/Video/PPAR - WS2024 - Resized Landing Page Movie (1) (1).mp4"
 import Event from '../Component/Event'
 import AboutSection from '../Component/Aboutsection'
 import LargeCard from '../Component/Lg_card'
@@ -79,7 +79,7 @@ const Mainhome = () => {
      {/* Name */}
     <div>
     <div className='w-full  bg-black  mt-12'>
-      <p className=' text-8xl lg:text-9xl text-gray-900 text-center' data-aos="fade-down">GALLERY</p>
+      <p className=' text-8xl lg:text-9xl text-yellow-500 text-center' data-aos="fade-down">GALLERY</p>
       <div className='-translate-y-10'>
         <p className='text-white text-3xl text-center font-bold' data-aos="fade-down">Captured Moments From Our Member</p>
         <div className=' w-[45vh] lg:w-[80vh] mx-auto mt-8 '>
@@ -109,7 +109,7 @@ const Mainhome = () => {
      {/* Blog */}
  <div>
     <div className='w-full  bg-black  mt-12'>
-      <p className=' text-9xl text-gray-900 text-center' data-aos="fade-down">BLOG</p>
+      <p className=' text-9xl text-yellow-500 text-center' data-aos="fade-down">BLOG</p>
       <div className='-translate-y-10'>
         <p className='text-white text-3xl text-center font-bold' data-aos="fade-down">Blog & Articles</p>
         <div className=' w-[50vh] lg:w-[80vh] mx-auto mt-8 '>

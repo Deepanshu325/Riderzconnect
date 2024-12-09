@@ -1,6 +1,5 @@
 import React from 'react';
-import video from "../Assets/Video/PPAR - WS2024 - Landing Page Movie.mp4"
-
+import video from "../Assets/Video/PPAR - WS2024 - Resized Landing Page Movie (1) (1).mp4"
 const Hero = () => {
   return (
     <section className="relative h-[70vh] bg-gray-900">

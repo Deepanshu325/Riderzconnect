@@ -11,11 +11,13 @@ import Expeditions from './Pages/Expeditions';
 import Workshops from './Pages/Workshops';
 import AdventurePark1 from './Pages/AdventurePark1';
 import Mainhome from './Pages/Mainhome';
+import ScrollToTop from './Component/Scrolltotop';
 
 function App() {
   return (
     <div className="App">
       <NavigationBar/>
+      <ScrollToTop/>
       <Routes>
         <Route path="/" element={<Home/>}/>
         <Route path="/events" element={<Home2/>}/>
