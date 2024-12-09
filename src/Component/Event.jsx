@@ -49,18 +49,18 @@ const Event = () => {
       <div className="w-full md:w-1/2 h-56 flex flex-row bg-black">
         {/* Days */}
         <div className="text-center   w-1/3 content-center">
-          <div className="text-3xl font-bold text-white">5</div>
-          <div className="text-2xl text-white ">Days</div>
+          <div className="text-3xl font-bold text-yellow-500">5</div>
+          <div className="text-2xl text-yellow-500 ">Days</div>
         </div>
         {/* Hours */}
         <div className="text-center   w-1/3 content-center">
-          <div className="text-3xl font-bold text-white">12</div>
-          <div className="text-2xl text-white ">Hours</div>
+          <div className="text-3xl font-bold text-yellow-500">12</div>
+          <div className="text-2xl text-yellow-500 ">Hours</div>
         </div>
         {/* Seconds */}
         <div className="text-center  w-1/3 content-center">
-          <div className="text-3xl font-bold text-white">45</div>
-          <div className="text-2xl text-white ">Seconds</div>
+          <div className="text-3xl font-bold text-yellow-500">45</div>
+          <div className="text-2xl text-yellow-500 ">Seconds</div>
         </div>
       </div>
     </div>

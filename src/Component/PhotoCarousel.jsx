@@ -11,10 +11,9 @@ const PhotoCarousel = () => {
   ];
 
   const [currentIndex, setCurrentIndex] = useState(0);
-  const itemsPerRow = 3;
 
   const nextSlide = () => {
-    if (currentIndex < photos.length - itemsPerRow) {
+    if (currentIndex < photos.length - 1) {
       setCurrentIndex(currentIndex + 1);
     }
   };
@@ -27,46 +26,46 @@ const PhotoCarousel = () => {
 
   return (
     <div className="bg-white">
-    <div className="relative w-full bg-black/80 p-6 ">
-      
-
-      <div className="overflow-hidden">
-        <div
-          className="flex transition-transform duration-500"
-          style={{ transform: `translateX(-${currentIndex * 100 / itemsPerRow}%)` }}
-        >
-          {photos.map((photo, index) => (
-            <div
-              key={index}
-              className="min-w-[calc(100%/3)] px-2"
-            >
-              <img
-                src={photo}
-                alt={`Photo ${index + 1}`}
-                className="w-full h-56 object-cover rounded-lg"
-              />
-            </div>
-          ))}
+      <div className="relative w-full bg-black/80 p-6">
+        <div className="overflow-hidden">
+          <div
+            className="flex transition-transform duration-500"
+            style={{
+              transform: `translateX(-${currentIndex * 100}%)`,
+            }}
+          >
+            {photos.map((photo, index) => (
+              <div
+                key={index}
+                className="w-full sm:w-1/2 lg:w-1/3 flex-shrink-0 px-2"
+              >
+                <img
+                  src={photo}
+                  alt={`Photo ${index + 1}`}
+                  className="w-full h-56 object-cover rounded-lg"
+                />
+              </div>
+            ))}
+          </div>
         </div>
+
+        {/* Navigation Buttons */}
+        <button
+          onClick={prevSlide}
+          className="absolute top-1/2 left-4 -translate-y-1/2 bg-white text-orange-500 text-xl font-extrabold p-3 rounded-full hover:bg-red-700 hover:text-2xl hover:text-white transition"
+          disabled={currentIndex === 0}
+        >
+          &lt;
+        </button>
+
+        <button
+          onClick={nextSlide}
+          className="absolute top-1/2 right-4 -translate-y-1/2 bg-white text-orange-500 font-extrabold text-xl p-3 rounded-full hover:bg-red-700 hover:text-2xl hover:text-white transition"
+          disabled={currentIndex >= photos.length - 1}
+        >
+          &gt;
+        </button>
       </div>
-
-      {/* Navigation Buttons */}
-      <button
-        onClick={prevSlide}
-        className="absolute top-1/2 left-4 -translate-y-1/2 bg-white text-orange-500 text-xl font-extrabold p-3 rounded-full hover:bg-red-700 hover:text-2xl hover:text-white transition"
-        disabled={currentIndex === 0}
-      >
-        &lt;
-      </button>
-
-      <button
-        onClick={nextSlide}
-        className="absolute top-1/2 right-4 -translate-y-1/2 bg-white text-orange-500 font-extrabold text-xl p-3 rounded-full hover:bg-red-700 hover:text-2xl hover:text-white transition"
-        disabled={currentIndex >= photos.length - itemsPerRow}
-      >
-        &gt;
-      </button>
-    </div>
     </div>
   );
 };

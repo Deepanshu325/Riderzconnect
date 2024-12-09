@@ -35,7 +35,7 @@ const Carousel = () => {
         {items.map((item) => (
           <div
             key={item.id}
-            className="flex-none w-full sm:w-full md:w-1/2 lg:w-1/4 xl:w-1/5" // Full width for small screens, 50% on medium, 25% on large, 20% on extra large
+            className="flex-none w-full sm:w-full md:w-1/2 lg:w-1/5 xl:w-1/5" // Full width for small screens, 50% on medium, 25% on large, 20% on extra large
           >
             <Link to={item.link}>
               <div className="bg-white rounded-2xl border border-black overflow-hidden">

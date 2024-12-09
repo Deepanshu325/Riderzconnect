@@ -8,7 +8,6 @@ const Breakfastrides = () => {
   return (
     <div className='w-full bg-black'>
         <div className='w-[40vh] mx-auto text-center '>
-      <SimpleNavbar name2="BreakFast Rides"/>
       </div>
       <div className='w-[180vh] mx-auto'>
         <div>

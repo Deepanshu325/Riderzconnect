@@ -8,10 +8,6 @@ const RatingContainer = () => {
     <div className="bg-white overflow-hidden">
     <div className="min-h-[45vh] max-height-fit bg-black/80 text-white overflow-hidden ">
     
-        <div className="pl-8">
-      {/* Navbar */}
-      <SimpleNavbar name="Breakfast Rides" name2="Rishikesh Adventure Park" />
-      </div>
 
       {/* Content */}
       <div className="p-1 pl-8">

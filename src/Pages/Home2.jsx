@@ -12,12 +12,12 @@ const Home2 = () => {
     <div className='bg-black '>
 <Hero/>
 
-<div className='mt-10  '>
+<div className='mt-10 md:mb-10 lg:mb-0 '>
 <Name/>
 </div>
 
 </div>
-<div  className="min-h-screen flex items-center justify-center pl-16 pr-16 pb-32 lg:pb-0 relative lg:bottom-24">
+<div  className="min-h-fit flex items-center justify-center pl-16 pr-16 pb-32 lg:pb-0 mb-32">
 <Carousel/>
 </div>
 <div>
