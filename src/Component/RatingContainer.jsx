@@ -6,7 +6,7 @@ import StickyPriceBar from "./StickyPriceBar";
 const RatingContainer = () => {
   return (
     <div className="bg-white overflow-hidden">
-    <div className="min-h-[45vh] max-height-fit bg-black/80 text-white overflow-hidden ">
+    <div className="min-h-fit pb-6 max-height-fit bg-black/80 text-white overflow-hidden ">
     
 
       {/* Content */}

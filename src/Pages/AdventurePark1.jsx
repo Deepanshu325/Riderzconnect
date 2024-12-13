@@ -17,7 +17,7 @@ const AdventurePark1 = () => {
     
     </div>
    
-    <div className='pt-20 lg:pr-72'>
+    <div className='pt-10 lg:pr-72'>
        
         <Descriptioncard/>
         

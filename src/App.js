@@ -10,7 +10,7 @@ import Events from './Pages/Events';
 import Expeditions from './Pages/Expeditions';
 import Workshops from './Pages/Workshops';
 import AdventurePark1 from './Pages/AdventurePark1';
-import Mainhome from './Pages/Mainhome';
+import Home3 from './Pages/Home3';
 import ScrollToTop from './Component/Scrolltotop';
 import ClickToTop from './Component/ClicktoTop';
 
@@ -23,7 +23,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home/>}/>
         <Route path="/events" element={<Home2/>}/>
-        <Route path="/home" element={<Mainhome/>}/>
+        <Route path="/home" element={<Home3/>}/>
         <Route path="/breakfastrides" element={<Breakfastrides/>}/>
         <Route path="/events" element={<Events/>}/>
         <Route path="/expeditions" element={<Expeditions/>}/>
