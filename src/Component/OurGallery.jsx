@@ -2,8 +2,19 @@ import React from "react";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
 
 const OurGallery = () => {
+
+  
+     AOS.init({
+            duration: 2000, // Animation duration in milliseconds
+            once: false,    // Animation triggers every time the element enters the viewport
+            offset: window   // Offset distance in pixels (increase this for higher delay)
+        });
+
   const settings = {
     dots: true,
     infinite: true,
@@ -50,7 +61,7 @@ const OurGallery = () => {
         className="relative h-[500px] bg-cover bg-center text-center text-white flex flex-col items-center justify-center"
         style={{ backgroundImage: `url(https://imgd.aeplcdn.com/1280x720/n/cw/ec/103795/yzf-r15-right-front-three-quarter-12.jpeg?isig=0&q=100)` }}
       >
-        <h4 className="text-sm uppercase tracking-wide mb-2 font-bold">Our Gallery</h4>
+        <h4 className="text-sm uppercase tracking-wide mb-2 font-bold" data-aos="fade-down">Our Gallery</h4>
       </div>
 
       {/* Carousel Section */}
@@ -58,7 +69,7 @@ const OurGallery = () => {
         <div className="relative z-10 px-4 lg:px-10">
           <Slider {...settings}>
             {images.map((image, index) => (
-              <div key={index} className="p-1">
+              <div key={index} className="p-1" data-aos="fade-left">
                 <img
                   src={image}
                   alt={`Gallery ${index + 1}`}

@@ -4,8 +4,19 @@ import helmet from "../Assets/Icons/helmet.png"
 import tyre from "../Assets/Icons/tyre.png"
 import workshop from "../Assets/Icons/team.png"
 import speedometer from "../Assets/Icons/speedometer.png"
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const UpcomingEvent = () => {
+
+    
+      AOS.init({
+        duration: 2000, // Animation duration in milliseconds
+        once: false,    // Animation triggers every time the element enters the viewport
+        offset: 200,    // Offset distance in pixels (increase this for higher delay)
+    });
+      
+
     // Set the countdown target date
     const targetDate = new Date("2024-12-31T23:59:59").getTime();
 
@@ -48,12 +59,12 @@ const UpcomingEvent = () => {
             <div className="w-full bg-black text-white flex flex-col lg:flex-row items-center content-center lg:items-start lg:justify-between p-6 lg:p-12 space-y-6 lg:space-y-0 max-h-[60vh]">
                 {/* Left Section */}
                 <div className="flex flex-col space-y-4 text-center lg:text-left">
-                    <h1 className="text-4xl lg:text-3xl font-bold">UPCOMING EVENT</h1>
-                    <p className="text-sm lg:text-sm text-yellow-400">HIMALAYAS, DEC-17-18-2019</p>
+                    <h1 className="text-4xl lg:text-3xl font-bold" data-aos="fade-up">UPCOMING EVENT</h1>
+                    <p className="text-sm lg:text-sm text-yellow-400" data-aos="fade-down">HIMALAYAS, DEC-17-18-2019</p>
                 </div>
 
                 {/* Countdown Timer */}
-                <div className="flex justify-center space-x-4 p-4 rounded-md">
+                <div className="flex justify-center space-x-4 p-4 rounded-md" data-aos="fade-right">
                     {Object.entries(timeLeft).map(([label, value]) => (
                         <div key={label} className=" bg-gray-950 rounded-lg p-2">
                             <div className="flex flex-col items-center bg-black/90 px-2 py-2">
@@ -66,7 +77,7 @@ const UpcomingEvent = () => {
 
                 {/* Right Section */}
                 <div className="bg-white p-6 lg:p-10 w-full lg:w-auto rounded-md">
-                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
+                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 " data-aos="fade-left">
                         <iframe
                             width="100%"
                             height="auto"
@@ -77,7 +88,7 @@ const UpcomingEvent = () => {
                             referrerPolicy="strict-origin-when-cross-origin"
                             allowFullScreen
                         ></iframe>
-                        <div className="pl-4 lg:pl-10">
+                        <div className="pl-4 lg:pl-10" data-aos="fade-left">
                             <h1 className="text-2xl font-bold text-black">WATCH US IN ACTION</h1>
                             <p className="text-lg text-yellow-400 font-bold">MORE PHOTOS & VIDEOS</p>
                         </div>
@@ -92,12 +103,12 @@ const UpcomingEvent = () => {
                             key={index}
                             className="flex flex-col items-center p-4 rounded-lg shadow-lg bg-black/80 text-white"
                         >
-                            <div className="text-4xl mb-4">
+                            <div className="text-4xl mb-4" data-aos="fade-down">
                                 <img src={event.icon} alt="" className="w-12" />
                             </div>
-                            <div className="text-4xl font-bold mb-4 text-yellow-500">{event.number}</div>
+                            <div className="text-4xl font-bold mb-4 text-yellow-500" >{event.number}</div>
                             <div className="w-full h-1 bg-yellow-400 mb-4"></div>
-                            <div className="text-md font-medium">{event.title}</div>
+                            <div className="text-md font-medium" data-aos="fade-up">{event.title}</div>
                         </div>
                     ))}
                 </div>

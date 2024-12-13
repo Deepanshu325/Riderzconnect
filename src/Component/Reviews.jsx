@@ -1,7 +1,17 @@
 import React, { useState, useEffect } from 'react';
 import { FaChevronLeft, FaChevronRight } from 'react-icons/fa';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const Review = () => {
+
+   AOS.init({
+          duration: 2000, // Animation duration in milliseconds
+          once: false,    // Animation triggers every time the element enters the viewport
+          offset: window   // Offset distance in pixels (increase this for higher delay)
+      });
+
+
   // Sample data for reviews and members
   const reviews = [
     {
@@ -51,7 +61,7 @@ const Review = () => {
       </div>
 
       {/* Right Div */}
-      <div className="w-full lg:w-1/2 p-8 lg:p-24 flex flex-col">
+      <div className="w-full lg:w-1/2 p-8 lg:p-24 flex flex-col" data-aos="fade-left">
         {/* Top Heading */}
         <h3 className="text-sm uppercase tracking-widest text-black font-bold mb-2">TESTIMONIALS</h3>
 

@@ -12,8 +12,19 @@ import crash3 from "../Assets/Images/crash3.webp";
 import crash4 from "../Assets/Images/phones.webp";
 import crash5 from "../Assets/Images/crash4.webp";
 import hero5 from "../Assets/Images/home_bottom_overlay.webp";
+import Questions from '../Component/Questions';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const Home = () => {
+
+   AOS.init({
+          duration: 2000, // Animation duration in milliseconds
+          once: false,    // Animation triggers every time the element enters the viewport
+          offset:200  // Offset distance in pixels (increase this for higher delay)
+      });
+
+
   return (
     <>
       {/* Section 1 */}
@@ -23,6 +34,7 @@ const Home = () => {
             src={hero}
             alt="Background"
             className="z-0 h-[70vh] w-full md:h-[70vh] lg:h-[120vh] object-cover"
+            
           />
           <img
             src={hero2}
@@ -33,23 +45,23 @@ const Home = () => {
             <h1 className="text-4xl font-bold text-orange-500 md:text-2xl lg:text-4xl">
               01
             </h1>
-            <h2 className="w-20 text-2xl font-semibold mt-2 md:w-auto lg:text-7xl">
+            <h2 className="w-20 text-2xl font-semibold mt-2 md:w-auto lg:text-7xl" >
               SAFETY DISCOVERY COMMUNITY
             </h2>
-            <p className="mt-4 text-base md:text-lg lg:text-xl lg:w-96">
+            <p className="mt-4 text-base md:text-lg lg:text-xl lg:w-96" >
               The lifesaving motorcycle app that will take your riding to the next level
             </p>
             <div className="mt-6 grid grid-rows-2 md:grid-rows-none md:grid-cols-2 md:gap-4 lg:gap-16">
-              <button className="w-32 mb-2 text-white py-2 px-4 rounded md:w-40">
+              <button className="w-32 mb-2 text-white py-2 px-4 rounded md:w-40" >
                 <img src={google} alt="App Store" />
               </button>
-              <button className="w-32 mb-2 text-white py-2 px-4 rounded md:w-40">
+              <button className="w-32 mb-2 text-white py-2 px-4 rounded md:w-40" >
                 <img src={app} alt="Google Play" />
               </button>
             </div>
           </div>
         </div>
-        <div className="lg:z-30 hidden sm:hidden md:hidden lg:block lg:w-[45%] lg:absolute lg:bottom-2 lg:right-0  overflow-hidden ">
+        <div className="lg:z-30 hidden sm:hidden md:hidden lg:block lg:w-[45%] lg:absolute lg:bottom-2 lg:right-0  overflow-hidden " data-aos="fade-right">
           <img src={crash4} alt="" className='lg:h-[76vh] lg:w-[80%]' />
         </div>
 
@@ -70,17 +82,17 @@ const Home = () => {
               <h1 className="text-4xl font-bold text-orange-500 lg:text-sm">
                 02
               </h1>
-              <h2 className="w-full text-2xl font-semibold mb-4 md:w-[50vh]">
+              <h2 className="w-full text-2xl font-semibold mb-4 md:w-[50vh]" data-aos="fade-right">
                 Feel safe while riding
               </h2>
-              <p className="text-lg mb-2">
+              <p className="text-lg mb-2" data-aos="fade-left">
                 Automatic crash detection using algorithms that detect accidents.
               </p>
-              <p className="text-lg mb-4">
+              <p className="text-lg mb-4" data-aos="fade-right">
                 In case of an accident, your safety contacts will be notified of your position.
               </p>
               {/* Image for Mobile */}
-              <div className="w-full flex justify-center">
+              <div className="w-full flex justify-center" data-aos="fade-right">
                 <img
                   src={crash}
                   alt="Crash Icon"
@@ -90,7 +102,7 @@ const Home = () => {
             </div>
 
             {/* Desktop and Large Screens: Original Design */}
-            <div className="hidden lg:flex lg:pl-[20%] md:pl-[10%]">
+            <div className="hidden lg:flex lg:pl-[20%] md:pl-[10%]" data-aos="fade-right">
               {/* Left Image */}
               <img
                 src={crash}
@@ -111,13 +123,13 @@ const Home = () => {
                 <h1 className="text-4xl font-bold text-orange-500 lg:text-5xl">
                   02
                 </h1>
-                <h2 className="text-4xl font-semibold mb-4 md:w-[50vh] lg:w-[60vh] lg:text-6xl">
+                <h2 className="text-4xl font-semibold mb-4 md:w-[50vh] lg:w-[60vh] lg:text-6xl" data-aos="fade-right">
                   Feel safe while riding
                 </h2>
-                <p className="text-lg mb-2 lg:text-lg">
+                <p className="text-lg mb-2 lg:text-lg" data-aos="fade-left">
                   Automatic crash detection using algorithms that detect accidents.
                 </p>
-                <p className="text-lg mb-4 lg:text-lg">
+                <p className="text-lg mb-4 lg:text-lg" data-aos="fade-right">
                   In case of an accident, your safety contacts will be notified of your position.
                 </p>
               </div>
@@ -137,20 +149,20 @@ const Home = () => {
               <h1 className="text-4xl font-bold text-orange-500 lg:text-5xl">
                 03
               </h1>
-              <h2 className="w-[30vh] text-4xl font-semibold mb-4 md:w-[50vh] lg:w-[50vh] lg:text-6xl">
+              <h2 className="w-[30vh] text-4xl font-semibold mb-4 md:w-[50vh] lg:w-[50vh] lg:text-6xl" data-aos="fade-right">
                 Plan your adventures
               </h2>
-              <p className="text-lg mb-2 lg:text-lg lg:w-[50vh]">
+              <p className="text-lg mb-2 lg:text-lg lg:w-[50vh]" data-aos="fade-left">
                 Plan and customize different routes for tomorrow's adventures.
               </p>
-              <p className="text-lg mb-4 lg:text-lg lg:w-[50vh]">
+              <p className="text-lg mb-4 lg:text-lg lg:w-[50vh]" data-aos="fade-right">
                 Our Trip Planner makes it easy finding the best roads to your destination.
               </p>
             </div>
             <img
               src={crash2}
               alt="Trip Planning Icon"
-              className="h-[60vh] w-48 absolute right-10 md:w-80 lg:w-72 lg:h-[95vh] lg:left-[140vh] lg:bottom-1"
+              className="h-[60vh] w-48 absolute right-10 md:w-80 lg:w-72 lg:h-[95vh] lg:left-[140vh] lg:bottom-1" data-aos="fade-right"
             />
             <h1 className="z-30 text-gray-500 opacity-15 font-bold text-5xl absolute bottom-4 left-1/2 transform -translate-x-1/2 px-4 lg:text-8xl">
               DISCOVERY
@@ -165,15 +177,15 @@ const Home = () => {
             {/* Text Section */}
             <div className=" p-8 ">
               <h1 className="text-4xl font-bold text-orange-500">04</h1>
-              <h2 className="text-3xl font-semibold mb-4 text-white">
+              <h2 className="text-3xl font-semibold mb-4 text-white" data-aos="fade-right">
                 Plan your adventures
               </h2>
-              <p className="text-lg mb-2 text-gray-500">
+              <p className="text-lg mb-2 text-gray-500" data-aos="fade-left">
                 Discover the best routes made by other bikers or drive your own using Turn-by-Turn Navigation.
               </p>
             </div>
             {/* Image Section */}
-            <div className="grid grid-cols-2 items-center sm:ml-2 mt-4">
+            <div className="grid grid-cols-2 items-center sm:ml-2 mt-4" data-aos="fade-right">
               <img
                 src={crash2}
                 alt="Trip Planning Icon"
@@ -188,7 +200,7 @@ const Home = () => {
           </div>
 
           {/* Desktop View: Unchanged Design */}
-          <div className="hidden lg:flex lg:relative left-40 lg:w-[140vh]">
+          <div className="hidden lg:flex lg:relative left-40 lg:w-[140vh]" data-aos="fade-right">
             {/* Images */}
             <div className="w-1/2 pr-4">
               <img
@@ -210,10 +222,10 @@ const Home = () => {
               <div className="lg:flex lg:w-[160vh]">
                 <div className="lg:relative lg:left-56 lg:top-40">
                   <h1 className="text-4xl font-bold text-orange-500 lg:text-5xl">04</h1>
-                  <h2 className="w-[30vh] text-4xl font-semibold mb-4 text-white lg:text-5xl lg:w-[50vh]">
+                  <h2 className="w-[30vh] text-4xl font-semibold mb-4 text-white lg:text-5xl lg:w-[50vh]" data-aos="fade-right">
                     Plan your adventures
                   </h2>
-                  <p className="text-lg mb-2 text-gray-500 lg:w-[50vh]">
+                  <p className="text-lg mb-2 text-gray-500 lg:w-[50vh]" data-aos="fade-left">
                     Discover the best routes made by other bikers or drive your own using Turn-by-Turn Navigation.
                   </p>
                 </div>
@@ -227,7 +239,7 @@ const Home = () => {
         </div>
 
         {/* Section 5 */}
-        <div className="z-10 w-full h-[110vh] relative  md:h-[140vh]  lg:h-[113vh]">
+        <div className="z-10 w-full h-[110vh] relative  md:h-[140vh]  lg:h-[113vh]" data-aos="fade-right">
           {/* Background Image */}
           <img
             src={hero5}
@@ -241,11 +253,11 @@ const Home = () => {
               {/* Text Section */}
               <div className="mb-6">
                 <h1 className="text-4xl font-bold text-orange-500">05</h1>
-                <h2 className="text-2xl font-semibold mb-4">Track your progress</h2>
-                <p className="text-lg text-gray-500">
+                <h2 className="text-2xl font-semibold mb-4" data-aos="fade-right">Track your progress</h2>
+                <p className="text-lg text-gray-500" data-aos="fade-left">
                   Get statics for your rides and develop your driver profile
                 </p>
-                <p className="text-lg text-gray-500">
+                <p className="text-lg text-gray-500" data-aos="fade-right">
                   Plan your upcoming trips with your friends or share ride tips in the chat
                 </p>
               </div>
@@ -255,7 +267,7 @@ const Home = () => {
                 <img
                   src={crash3}
                   alt="Trip Planning Icon"
-                  className="h-[50vh] w-auto mx-auto object-contain"
+                  className="h-[50vh] w-auto mx-auto object-contain" data-aos="fade-right"
                 />
               </div>
             </div>
@@ -263,24 +275,24 @@ const Home = () => {
             {/* Desktop View */}
             <div className="hidden lg:flex lg:w-full lg:relative lg:left-60">
               {/* Left Image */}
-              <div className="lg:relative lg:right-28">
+              <div className="lg:relative lg:right-28" data-aos="fade-right">
                 <img
                   src={crash3}
                   alt="Trip Planning Icon"
-                  className="h-[66vh] w-52 mx-auto md:w-64 lg:w-80 lg:h-[96vh] lg:ml-10"
+                  className="h-[66vh] w-52 mx-auto md:w-64 lg:w-80 lg:h-[96vh] lg:ml-10" 
                 />
               </div>
 
               {/* Right Text Section */}
               <div className="lg:w-[50vh] lg:relative lg:top-40 lg:left-80">
                 <h1 className="text-4xl font-bold text-orange-500 lg:text-5xl">05</h1>
-                <h2 className="w-[30vh] text-4xl font-semibold mb-4 md:w-[50vh] lg:w-[60vh] lg:text-2xl">
+                <h2 className="w-[30vh] text-4xl font-semibold mb-4 md:w-[50vh] lg:w-[60vh] lg:text-2xl" data-aos="fade-right">
                   Track your progress
                 </h2>
-                <p className="text-lg mb-2 text-gray-500 lg:text-lg lg:w-[60vh]">
+                <p className="text-lg mb-2 text-gray-500 lg:text-lg lg:w-[60vh]" data-aos="fade-left">
                   Get statics for your rides and develop your driver profile
                 </p>
-                <p className="text-lg mb-4 text-gray-500 lg:text-lg lg:w-[60vh]">
+                <p className="text-lg mb-4 text-gray-500 lg:text-lg lg:w-[60vh]" data-aos="fade-right">
                   Plan your upcoming trips with your friends or share ride tips in the chat
                 </p>
               </div>
@@ -288,7 +300,7 @@ const Home = () => {
           </div>
         </div>
       </div>
-
+      <Questions/>
       {/* Footer */}
       <Footer />
     </>

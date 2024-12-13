@@ -5,8 +5,17 @@ import "slick-carousel/slick/slick-theme.css";
 import image1 from "../Assets/Images/1.png";
 import image2 from "../Assets/Images/2.png";
 import image3 from "../Assets/Images/3.png";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const Bgcarousel = () => {
+
+  AOS.init({
+    duration: 2000, // Animation duration in milliseconds
+    once: false,    // Animation triggers every time the element enters the viewport
+    offset: 200,    // Offset distance in pixels (increase this for higher delay)
+});
+  
   const [activeSlide, setActiveSlide] = useState(0);
 
   const settings = {
@@ -26,7 +35,7 @@ const Bgcarousel = () => {
     <div className=" relative bottom-20 md:bottom-20 lg:bottom-0 ">
     <div className="flex flex-col md:flex-row relative   min-h-screen z-0 overflow-hidden">
       {/* Sidebar */}
-      <div className="absolute bottom-8 md:bottom-12 lg:bottom-20 left-16 sm:left-16 md:left-14 p-4 sm:p-6 rounded-lg shadow-lg w-60 md:w-full z-10">
+      <div className="absolute bottom-8 md:bottom-12 lg:bottom-20 left-16 sm:left-16 md:left-14 p-4 sm:p-6 rounded-lg  w-60 md:w-full z-10" data-aos="fade-right">
         <div className="text-sm lg:text-md text-white font-bold mb-8 md:mb-16">RIDE AND LIVE TODAY</div>
         <h2 className="text-4xl sm:text-5xl lg:text-8xl font-bold mb-2 sm:mb-4 text-white">WE RIDE</h2>
         <h2 className="text-4xl sm:text-5xl lg:text-8xl font-bold mb-4 sm:mb-8 text-white">TOGETHER</h2>
@@ -51,7 +60,7 @@ const Bgcarousel = () => {
         </Slider>
 
         {/* Custom Navigation buttons */}
-        <div className="absolute md:bottom-28 bottom-24 lg:bottom-28 left-4 right-4 flex justify-between transform -translate-y-1/2 z-10">
+        <div className="absolute md:bottom-28 bottom-24 lg:bottom-48 left-4 right-4 flex justify-between transform -translate-y-1/2 z-10" data-aos="fade-up">
           <button
             className="text-white bg-opacity-50 p-3 sm:p-4 rounded-full text-4xl sm:text-5xl"
             onClick={() => sliderRef.current.slickPrev()} // Go to previous slide

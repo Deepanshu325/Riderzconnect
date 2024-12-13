@@ -1,6 +1,16 @@
 import React from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const Joinevent = () => {
+
+    AOS.init({
+        duration: 2000, // Animation duration in milliseconds
+        once: false,    // Animation triggers every time the element enters the viewport
+        offset: window   // Offset distance in pixels (increase this for higher delay)
+    });
+
+
   return (
     <div className="w-full h-[100vh] bg-cover bg-black flex items-center justify-center"
       style={{
@@ -9,9 +19,9 @@ const Joinevent = () => {
       
     >  
       <div className="text-center rounded-md">
-        <h1 className="text-white text-lg font-bold mb-12">COME RIDE WITH US</h1>
-        <p className="text-white text-7xl font-bold mb-6">HIMALAYAS CALLING</p>
-        <button className="bg-yellow-500 text-black px-6 py-5 rounded hover:bg-yellow-600">
+        <h1 className="text-white text-lg font-bold mb-12" data-aos="fade-left">COME RIDE WITH US</h1>
+        <p className="text-white text-7xl font-bold mb-6" data-aos="fade-right">HIMALAYAS CALLING</p>
+        <button className="bg-yellow-500 text-black px-6 py-5 rounded hover:bg-yellow-600" data-aos="fade-up">
           JOIN THIS RIDE
         </button>
       </div>

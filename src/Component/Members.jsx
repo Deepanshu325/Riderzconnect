@@ -1,14 +1,24 @@
 import React from 'react';
 import { FaFacebook, FaInstagram, FaTwitter, FaYoutube } from 'react-icons/fa';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
 
 const Members = () => {
+ 
+    AOS.init({
+        duration: 2000, // Animation duration in milliseconds
+        once: false,    // Animation triggers every time the element enters the viewport
+        offset: window   // Offset distance in pixels (increase this for higher delay)
+    });
+
   return (
     <div className="w-full min-h-screen bg-black bg-opacity-90 text-white p-8">
       {/* Heading Section */}
       <div className="mb-8">
-        <h3 className="text-sm uppercase tracking-widest text-white font-bold mb-2">Our Team</h3>
-        <h1 className="text-6xl font-bold mb-2 lg:mb-8">MEET OUR</h1>
-        <h1 className="text-6xl font-bold text-white mb-20">CREW MEMBERS</h1>
+        <h3 className="text-sm uppercase tracking-widest text-white font-bold mb-2" data-aos="fade-right">Our Team</h3>
+        <h1 className="text-6xl font-bold mb-2 lg:mb-8" data-aos="fade-left">MEET OUR</h1>
+        <h1 className="text-6xl font-bold text-white mb-20" data-aos="fade-right">CREW MEMBERS</h1>
       </div>
 
       {/* Grid Section */}
@@ -16,7 +26,7 @@ const Members = () => {
         {[...Array(8)].map((_, index) => (
           <div
             key={index}
-            className="w-full h-80 bg-gray-800 rounded-lg overflow-hidden relative group"
+            className="w-full h-80 bg-gray-800 rounded-lg overflow-hidden relative group" data-aos="fade-right"
           >
             {/* Image */}
             <img
