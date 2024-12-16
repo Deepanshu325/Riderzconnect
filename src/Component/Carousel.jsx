@@ -1,14 +1,18 @@
 import React, { useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
-
+import image1 from "../Assets/Images/WhatsApp Image 2024-12-16 at 5.54.51 PM (1).jpeg"
+import image2 from "../Assets/Images/WhatsApp Image 2024-12-16 at 5.54.51 PM (2).jpeg"
+import image3 from "../Assets/Images/WhatsApp Image 2024-12-16 at 5.54.51 PM (3).jpeg"
+import image4 from "../Assets/Images/WhatsApp Image 2024-12-16 at 6.11.55 PM.jpeg";
+import image5 from "../Assets/Images/WhatsApp Image 2024-12-16 at 5.55.51 PM (2).jpeg"
 const Carousel = () => {
   const carouselRef = useRef(null);
 
   const items = [
-    { id: 1, image: 'https://png.pngtree.com/png-vector/20240602/ourmid/pngtree-a-man-riding-motorcycle-png-image_12589939.png', title: 'Breakfast Rides' ,link: "/breakfastrides" },
-    { id: 2, image: 'https://png.pngtree.com/png-vector/20230728/ourmid/pngtree-motorcycle-rider-png-image_6996935.png', title: 'Events', link: "/events" },
-    { id: 3, image: 'https://static.vecteezy.com/system/resources/previews/038/265/276/non_2x/ai-generated-sport-motorcycle-rider-in-cartoon-style-on-transparent-background-free-png.png', title: 'Expeditions' ,link:"/expeditions" },
-    { id: 4, image: 'https://static.vecteezy.com/system/resources/previews/016/731/482/non_2x/gold-rider-motorcycle-free-png.png', title : "workshops" , link : "/workshops" },
+    { id: 1, image: image1, title: 'Breakfast Rides' ,link: "/breakfastrides" },
+    { id: 2, image: image4, title: 'Events', link: "/events" },
+    { id: 3, image: image2, title: 'Expeditions' ,link:"/expeditions" },
+    { id: 4, image: image3, title : "workshops" , link : "/workshops" },
   ];
 
   // Auto-slide functionality

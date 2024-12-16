@@ -62,14 +62,14 @@ const NavigationBar = () => {
               <ul className="flex space-x-4">
                 {/* Menu Items with Expand Buttons */}
                 {[
-                  { label: 'HOME', link: '/home', subOptions: ['Option 1', 'Option 2'] },
-                  { label: 'GALLERY', link: '/gallery', subOptions: ['Photos', 'Videos'] },
-                  { label: 'RIDES', link: '/rides', subOptions: ['Upcoming', 'Past'] },
-                  { label: 'SHOP', link: '/shop', subOptions: ['Merch', 'Accessories'] },
-                  { label: 'EVENTS', link: '/events', subOptions: ['Workshops', 'Meetups'] },
-                  { label: 'MEDIA', link: '/media', subOptions: ['Press', 'Releases'] },
-                  { label: 'NEWS', link: '/news', subOptions: ['Latest', 'Archives'] },
-                  { label: 'PAGES', link: '/pages', subOptions: ['About Us', 'Contact'] },
+                  { label: 'HOME', link: '/home' , suboptions : [] },
+                  { label: 'GALLERY', link: '/gallery', subOptions: [] },
+                  { label: 'RIDES', link: '/rides', subOptions: [] },
+                  { label: 'SHOP', link: '/shop', subOptions: [] },
+                  { label: 'EVENTS', link: '/events', subOptions: [] },
+                  { label: 'MEDIA', link: '/media', subOptions: [] },
+                  { label: 'NEWS', link: '/news', subOptions: [] },
+                  { label: 'PAGES', link: '/pages', subOptions: [] },
                 ].map((menu, index) => (
                   <li key={index} className="relative">
                     <div className="flex items-center">
@@ -145,7 +145,7 @@ const NavigationBar = () => {
                   { label: 'PAGES', link: '/pages' },
                 ].map((menu, index) => (
                   <div key={index}>
-                    <div className="flex items-center justify-between px-4 py-2 hover:bg-gray-600">
+                    <div className=" bg-black opacity-100 flex items-center justify-between px-4 py-2 hover:bg-gray-600">
                       <Link
                         to={menu.link}
                         className="block text-white text-lg"

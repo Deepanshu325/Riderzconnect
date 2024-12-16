@@ -1,5 +1,10 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import image1 from "../Assets/Images/WhatsApp Image 2024-12-16 at 5.54.51 PM (1).jpeg"
+import image2 from "../Assets/Images/WhatsApp Image 2024-12-16 at 5.54.51 PM (2).jpeg"
+import image3 from "../Assets/Images/WhatsApp Image 2024-12-16 at 5.54.51 PM (3).jpeg"
+import image4 from "../Assets/Images/WhatsApp Image 2024-12-16 at 5.54.51 PM.jpeg"
+import image5 from "../Assets/Images/WhatsApp Image 2024-12-16 at 5.55.51 PM (2).jpeg"
 const Card = ({ image, title, price }) => {
   return (
     <div className="bg-black text-white  shadow-lg  flex flex-col">
@@ -39,27 +44,27 @@ const CardLayout = () => {
   // Sample card data
   const cards = [
     {
-      image: "https://png.pngtree.com/thumb_back/fh260/background/20240106/pngtree-coloful-nature-beautiful-scenery-image_15576031.jpg",
+      image: image1,
       title: "Rishikesh Adventure Park",
       price: "120",
     },
     {
-      image: "https://www.adventurush.com/wp-content/uploads/2022/08/450by310-2.jpg",
+      image: image2,
       title: "Kumbhalgarh Adventure Park",
       price: "150",
     },
     {
-      image: "https://tripxl.com/blog/wp-content/uploads/2024/10/How-To-Reach-1.jpg",
+      image: image3,
       title: "Pushkar Adventure Park",
       price: "180",
     },
     {
-      image: "https://res.cloudinary.com/dyiffrkzh/image/upload/c_fill,f_auto,fl_progressive.strip_profile,g_center,h_400,q_auto,w_700/v1712404894/bbj/kh32i6ozp6pbdinkaosr.webp",
+      image: image4,
       title: "Paintball in Jaipur",
       price: "200",
     },
     {
-      image: "https://www.adventurush.com/wp-content/uploads/2023/09/Jeep-safari-2.jpg",
+      image: image5,
       title: "Off Road Jeep Safari in Jaipur",
       price: "250",
     },
