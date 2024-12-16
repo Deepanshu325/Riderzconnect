@@ -135,7 +135,7 @@ const NavigationBar = () => {
             <div className="mt-2 rounded-md shadow-lg">
               <div className="py-1">
                 {[
-                  { label: 'HOME', link: '/' },
+                  { label: 'HOME', link: '/home' },
                   { label: 'GALLERY', link: '/gallery' },
                   { label: 'RIDES', link: '/rides' },
                   { label: 'SHOP', link: '/shop' },
