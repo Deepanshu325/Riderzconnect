@@ -28,7 +28,8 @@ const Home = () => {
   return (
     <>
       {/* Section 1 */}
-      <div className=' border border-orange-500  w-full overflow-x-hidden overflow-y-hidden'>
+      <div className='w-full overflow-hidden'>
+      <div className=' border border-orange-500  w-full overflow-hidden'>
         <div className="w-full overflow-hidden relative h-[70vh]  lg:h-[104vh] bg-black">
           <img
             src={hero}
@@ -102,7 +103,7 @@ const Home = () => {
             </div>
 
             {/* Desktop and Large Screens: Original Design */}
-            <div className="hidden lg:flex lg:pl-[20%] md:pl-[10%]" data-aos="fade-right">
+            <div className="hidden lg:flex lg:pl-[20%] md:pl-[10%]" >
               {/* Left Image */}
               <img
                 src={crash}
@@ -239,7 +240,7 @@ const Home = () => {
         </div>
 
         {/* Section 5 */}
-        <div className="z-10 w-full h-[110vh] relative  md:h-[140vh]  lg:h-[113vh]" data-aos="fade-right">
+        <div className="z-10 w-full h-[110vh] relative  md:h-[140vh]  lg:h-[113vh]" >
           {/* Background Image */}
           <img
             src={hero5}
@@ -267,7 +268,7 @@ const Home = () => {
                 <img
                   src={crash3}
                   alt="Trip Planning Icon"
-                  className="h-[50vh] w-auto mx-auto object-contain" data-aos="fade-right"
+                  className="h-[50vh] w-auto mx-auto object-contain"
                 />
               </div>
             </div>
@@ -275,7 +276,7 @@ const Home = () => {
             {/* Desktop View */}
             <div className="hidden lg:flex lg:w-full lg:relative lg:left-60">
               {/* Left Image */}
-              <div className="lg:relative lg:right-28" data-aos="fade-right">
+              <div className="lg:relative lg:right-28" >
                 <img
                   src={crash3}
                   alt="Trip Planning Icon"
@@ -303,6 +304,7 @@ const Home = () => {
       <Questions/>
       {/* Footer */}
       <Footer />
+      </div>
     </>
   );
 };
