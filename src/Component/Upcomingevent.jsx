@@ -6,6 +6,7 @@ import workshop from "../Assets/Icons/team.png"
 import speedometer from "../Assets/Icons/speedometer.png"
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import Runningnumbers from "./Runningnumbers";
 
 const UpcomingEvent = () => {
   AOS.init({
@@ -136,26 +137,7 @@ const UpcomingEvent = () => {
         </div>
       </div>
 
-      <div className="w-full h-auto bg-black/95 bg-cover bg-center bg-opacity-15 flex items-center justify-center py-12 mt-28 lg:mt-0">
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 text-center">
-          {events.map((event, index) => (
-            <div
-              key={index}
-              className="flex flex-col items-center p-4 rounded-lg shadow-lg bg-black/80 text-white event-number"
-              data-aos="fade-up"
-            >
-              <div className="text-4xl mb-4">
-                <img src={event.icon} alt="" className="w-12" />
-              </div>
-              <div className="text-4xl font-bold mb-4 text-yellow-500">
-                {animatedNumbers[index]?.number}
-              </div>
-              <div className="w-full h-1 bg-yellow-400 mb-4"></div>
-              <div className="text-md font-medium">{event.title}</div>
-            </div>
-          ))}
-        </div>
-      </div>
+      <Runningnumbers/>
     </>
   );
 };

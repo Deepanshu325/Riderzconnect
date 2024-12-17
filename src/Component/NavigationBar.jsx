@@ -38,6 +38,17 @@ const NavigationBar = () => {
     setExpandedMenus((prev) => ({ ...prev, [menu]: !prev[menu] }));
   };
 
+  const menuItems = [
+    { label: 'HOME', link: '/home', subOptions: [] },
+    { label: 'ABOUT CLUB', link: '/about-club', subOptions: ['CLUB INFO','CLUB HISTORY','OUR MISSION','OUR MEMBERS'] },
+    { label: 'RIDING REPORT', link: '/rides', subOptions: ['Weekly Rides', 'Monthly Report'] },
+    { label: 'SHOP', link: '/shop', subOptions: ['Merchandise', 'Accessories'] },
+    { label: 'EVENTS', link: '/events', subOptions: ['Upcoming Events', 'Past Events'] },
+    { label: 'MEDIA', link: '/media', subOptions: ['Photos', 'Videos'] },
+    { label: 'NEWS', link: '/news', subOptions: ['Latest News', 'Club Updates'] },
+    { label: 'PAGES', link: '/pages', subOptions: ['Contact Us', 'FAQ'] },
+  ];
+
   return (
     <div className="bg-white">
       {/* Navbar */}
@@ -60,17 +71,7 @@ const NavigationBar = () => {
             {/* Center Section - Desktop Menu */}
             <div className="hidden md:flex w-[70%] items-center justify-center space-x-4">
               <ul className="flex space-x-4">
-                {/* Menu Items with Expand Buttons */}
-                {[
-                  { label: 'HOME', link: '/home' , suboptions : [] },
-                  { label: 'GALLERY', link: '/gallery', subOptions: [] },
-                  { label: 'RIDES', link: '/rides', subOptions: [] },
-                  { label: 'SHOP', link: '/shop', subOptions: [] },
-                  { label: 'EVENTS', link: '/events', subOptions: [] },
-                  { label: 'MEDIA', link: '/media', subOptions: [] },
-                  { label: 'NEWS', link: '/news', subOptions: [] },
-                  { label: 'PAGES', link: '/pages', subOptions: [] },
-                ].map((menu, index) => (
+                {menuItems.map((menu, index) => (
                   <li key={index} className="relative">
                     <div className="flex items-center">
                       <Link
@@ -79,16 +80,18 @@ const NavigationBar = () => {
                       >
                         {menu.label}
                       </Link>
-                      <button
-                        onClick={() => toggleExpand(menu.label)}
-                        className="text-white ml-2 focus:outline-none"
-                      >
-                        {expandedMenus[menu.label] ? '▲' : '▼'}
-                      </button>
+                      {menu.subOptions.length > 0 && (
+                        <button
+                          onClick={() => toggleExpand(menu.label)}
+                          className="text-white ml-2 focus:outline-none"
+                        >
+                          {expandedMenus[menu.label] ? '▲' : '▼'}
+                        </button>
+                      )}
                     </div>
 
                     {/* Sub-options */}
-                    {expandedMenus[menu.label] && (
+                    {expandedMenus[menu.label] && menu.subOptions.length > 0 && (
                       <ul className="absolute left-0 mt-2 bg-gray-800 rounded-md shadow-lg w-32">
                         {menu.subOptions.map((option, subIndex) => (
                           <li key={subIndex}>
@@ -134,49 +137,36 @@ const NavigationBar = () => {
           >
             <div className="mt-2 rounded-md shadow-lg">
               <div className="py-1">
-                {[
-                  { label: 'HOME', link: '/home' },
-                  { label: 'GALLERY', link: '/gallery' },
-                  { label: 'RIDES', link: '/rides' },
-                  { label: 'SHOP', link: '/shop' },
-                  { label: 'EVENTS', link: '/events' },
-                  { label: 'MEDIA', link: '/media' },
-                  { label: 'NEWS', link: '/news' },
-                  { label: 'PAGES', link: '/pages' },
-                ].map((menu, index) => (
+                {menuItems.map((menu, index) => (
                   <div key={index}>
-                    <div className=" bg-black opacity-100 flex items-center justify-between px-4 py-2 hover:bg-gray-600">
+                    <div className="bg-black opacity-100 flex items-center justify-between px-4 py-2 hover:bg-gray-600">
                       <Link
                         to={menu.link}
                         className="block text-white text-lg"
                       >
                         {menu.label}
                       </Link>
-                      <button
-                        onClick={() => toggleExpand(menu.label)}
-                        className="text-white focus:outline-none"
-                      >
-                        {expandedMenus[menu.label] ? '▲' : '▼'}
-                      </button>
+                      {menu.subOptions.length > 0 && (
+                        <button
+                          onClick={() => toggleExpand(menu.label)}
+                          className="text-white focus:outline-none"
+                        >
+                          {expandedMenus[menu.label] ? '▲' : '▼'}
+                        </button>
+                      )}
                     </div>
                     {expandedMenus[menu.label] && (
                       <ul className="bg-gray-800">
-                        <li>
-                          <Link
-                            to={`${menu.link}/details`}
-                            className="block px-6 py-2 text-white hover:bg-gray-700"
-                          >
-                            Details
-                          </Link>
-                        </li>
-                        <li>
-                          <Link
-                            to={`${menu.link}/more-info`}
-                            className="block px-6 py-2 text-white hover:bg-gray-700"
-                          >
-                            More Info
-                          </Link>
-                        </li>
+                        {menu.subOptions.map((option, subIndex) => (
+                          <li key={subIndex}>
+                            <Link
+                              to={`${menu.link}/${option.toLowerCase().replace(/ /g, '-')}`}
+                              className="block px-6 py-2 text-white hover:bg-gray-700"
+                            >
+                              {option}
+                            </Link>
+                          </li>
+                        ))}
                       </ul>
                     )}
                   </div>
