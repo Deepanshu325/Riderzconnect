@@ -13,7 +13,7 @@ const GridStyle = () => {
 
      <CardComponent/>
      <Questions/>
-     <<Footer/>
+     <Footer/>
     </div>
   )
 }
