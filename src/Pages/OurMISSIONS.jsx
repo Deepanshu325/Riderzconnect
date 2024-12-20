@@ -14,6 +14,7 @@ const OurMISSIONS = () => {
   return (
    
    <>
+   <div className='overflow-hidden'>
      <ClubInfo name="OUR MISSION" background={image}/>
      <MotorcycleClub/>
      <OurRides/>
@@ -25,6 +26,7 @@ const OurMISSIONS = () => {
      <OurGallery/>
      <Questions/>
      <Footer/>
+     </div>
      
    
    </>

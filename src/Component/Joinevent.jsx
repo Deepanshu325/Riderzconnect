@@ -20,7 +20,7 @@ const Joinevent = () => {
     >  
       <div className="text-center rounded-md">
         <h1 className="text-white text-lg font-bold mb-12" data-aos="fade-left">COME RIDE WITH US</h1>
-        <p className="text-white text-7xl font-bold mb-6" data-aos="fade-right">HIMALAYAS CALLING</p>
+        <p className="text-white lg:text-7xl text-5xl font-bold mb-6" data-aos="fade-right">HIMALAYAS CALLING</p>
         <button className="bg-yellow-500 text-black px-6 py-5 rounded hover:bg-yellow-600" data-aos="fade-up">
           JOIN THIS RIDE
         </button>

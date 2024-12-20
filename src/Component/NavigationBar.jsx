@@ -41,7 +41,7 @@ const NavigationBar = () => {
   const menuItems = [
     { label: 'HOME', link: '/home', subOptions: [] },
     { label: 'ABOUT CLUB', link: '/about-club', subOptions: ['CLUB INFO','CLUB HISTORY','OUR MISSION','OUR MEMBERS'] },
-    { label: 'RIDING REPORT', link: '/rides', subOptions: ['Weekly Rides', 'Monthly Report'] },
+    { label: 'RIDING REPORT', link: '/rides', subOptions: ['Grid Style'] },
     { label: 'SHOP', link: '/shop', subOptions: ['Merchandise', 'Accessories'] },
     { label: 'EVENTS', link: '/events', subOptions: ['Upcoming Events', 'Past Events'] },
     { label: 'MEDIA', link: '/media', subOptions: ['Photos', 'Videos'] },

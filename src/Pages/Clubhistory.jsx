@@ -10,7 +10,7 @@ import Footer from '../Component/Footer'
 
 const Clubhistory = () => {
   return (
-    <div>
+    <div className='overflow-hidden'>
        <ClubInfo name="CLUB HISTORY" background={image}/>
        <HistorySection/>
        <ClubHistory/>

@@ -14,6 +14,7 @@ import Footer from '../Component/Footer'
 const Aboutinfo = () => {
   return (
     <>
+    <div className='overflow-hidden'>
    <ClubInfo name="CLUB INFO" background={background}/>
    <MotorcycleClubSection/>
    <ClubActivities/>
@@ -21,8 +22,12 @@ const Aboutinfo = () => {
    <WhyChooseUs/>
    <RecentPosts/>
    <RidingSection/>
+  
    <Questions/>
    <Footer/>
+
+    </div>
+  
    </>
   )
 }

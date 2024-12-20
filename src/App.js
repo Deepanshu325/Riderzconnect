@@ -16,7 +16,8 @@ import ClickToTop from './Component/ClicktoTop';
 import Aboutinfo from './Pages/Aboutinfo';
 import Clubhistory from './Pages/Clubhistory';
 import OurMISSIONS from './Pages/OurMISSIONS';
-import OurMemebers from './Pages/OurMemebers';
+import OurMembers from './Pages/OurMembers';
+import GridStyle from './Pages/GridStyle';
 
 function App() {
   return (
@@ -33,10 +34,13 @@ function App() {
         <Route path="/expeditions" element={<Expeditions/>}/>
         <Route path="/workshops" element={<Workshops/>}/>
         <Route path="/adventure1" element={<AdventurePark1/>}/>
+        <Route path="about-club" element={<Aboutinfo/>}/>
         <Route path="about-club/club-info" element={<Aboutinfo/>}/>
         <Route path="about-club/club-history" element={<Clubhistory/>}/>
         <Route path="about-club/our-mission" element={<OurMISSIONS/>}/>
-        <Route path="about-club/our-memebers" element={<OurMemebers/>}/>
+        <Route path="about-club/our-members" element={<OurMembers/>}/>
+        <Route path="rides" element={<GridStyle/>}/>
+        <Route path="rides/grid-style" element={<GridStyle/>}/>
 
       </Routes>
     </div>
