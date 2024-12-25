@@ -59,7 +59,7 @@ const Home = () => {
           </div>
         </div>
         <div className="lg:z-30 hidden sm:hidden md:hidden lg:block lg:w-[45%] lg:absolute lg:-bottom-10 lg:right-32  overflow-hidden ">
-          <img src={crash4} alt="" className=' ' />
+          <img src={crash4} alt="" className='h-[80vh] ' />
         </div>
 
         {/* Section 2 */}
