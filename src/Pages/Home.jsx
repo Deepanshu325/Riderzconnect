@@ -58,8 +58,8 @@ const Home = () => {
             </div>
           </div>
         </div>
-        <div className="lg:z-30 hidden sm:hidden md:hidden lg:block lg:w-[45%] lg:absolute lg:-bottom-6 lg:right-32  overflow-hidden ">
-          <img src={crash4} alt="" className='h-[80vh] ' />
+        <div className="lg:z-30 hidden sm:hidden md:hidden lg:block lg:w-[45%] lg:absolute lg:bottom-8 lg:right-10  overflow-hidden ">
+          <img src={crash4} alt="" className='h-[70vh] ' />
         </div>
 
         {/* Section 2 */}
