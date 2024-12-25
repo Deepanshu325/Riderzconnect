@@ -38,8 +38,8 @@ const Home = () => {
             
           />
           
-          <div className="z-10 relative pl-8 w-80  text-white md:w-[60%] lg:w-[20%] lg:translate-x-10 lg:-translate-y-[100vh] lg:pl-16 ">
-            <h1 className="text-4xl font-bold text-orange-500 md:text-2xl lg:text-4xl">
+          <div className="z-10 relative pl-8 w-80  text-yellow-500 md:w-[60%] lg:w-[20%] lg:translate-x-10 lg:-translate-y-[100vh] lg:pl-16 ">
+            <h1 className="text-4xl font-bold md:text-2xl lg:text-4xl">
               01
             </h1>
             <h2 className="w-20 text-2xl font-semibold mt-2 md:w-auto lg:text-7xl" >
