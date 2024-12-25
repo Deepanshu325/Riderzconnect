@@ -1,5 +1,5 @@
 import React from 'react';
-import hero from "../Assets/Images/home_one.jpg";
+import hero from "../Assets/Background/1. Section 1 SAFETY.png";
 import hero2 from "../Assets/Images/home_one_overlay.webp";
 import app from "../Assets/Icons/app_store.webp";
 import google from "../Assets/Icons/google.webp";
@@ -9,7 +9,7 @@ import Footer from '../Component/Footer';
 import hero4 from "../Assets/Images/motorcycle_landscape.webp";
 import crash2 from "../Assets/Images/planning_trip_en_11zon.png";
 import crash3 from "../Assets/Images/crash3.webp";
-import crash4 from "../Assets/Images/phones.webp";
+import crash4 from "../Assets/phone/SCETION 1.png";
 import crash5 from "../Assets/Images/crash4.webp";
 import hero5 from "../Assets/Images/home_bottom_overlay.webp";
 import Questions from '../Component/Questions';
@@ -30,19 +30,15 @@ const Home = () => {
       {/* Section 1 */}
       <div className='w-full overflow-hidden'>
       <div className=' border border-orange-500  w-full overflow-hidden'>
-        <div className="w-full overflow-hidden relative h-[70vh]  lg:h-[104vh] bg-black">
+        <div className="w-full overflow-hidden relative h-[70vh]  lg:h-full bg-black">
           <img
             src={hero}
             alt="Background"
-            className="z-0 h-[70vh] w-full md:h-[70vh] lg:h-[120vh] object-cover"
+            className=" h-[70vh] w-full md:h-[70vh] lg:h-[120vh] object-cover"
             
           />
-          <img
-            src={hero2}
-            alt="Overlay"
-            className="z-15 h-[70vh] w-full lg:h-[120vh] lg:-translate-y-24 object-cover absolute top-0"
-          />
-          <div className="z-10 relative pl-8 w-80 -translate-y-96 text-white md:w-[60%] lg:w-[20%] lg:translate-x-10 lg:-translate-y-[100vh] lg:pl-16 ">
+          
+          <div className="z-10 relative pl-8 w-80  text-white md:w-[60%] lg:w-[20%] lg:translate-x-10 lg:-translate-y-[100vh] lg:pl-16 ">
             <h1 className="text-4xl font-bold text-orange-500 md:text-2xl lg:text-4xl">
               01
             </h1>
@@ -62,8 +58,8 @@ const Home = () => {
             </div>
           </div>
         </div>
-        <div className="lg:z-30 hidden sm:hidden md:hidden lg:block lg:w-[45%] lg:absolute lg:bottom-2 lg:right-0  overflow-hidden " data-aos="fade-right">
-          <img src={crash4} alt="" className='lg:h-[76vh] lg:w-[80%]' />
+        <div className="lg:z-30 hidden sm:hidden md:hidden lg:block lg:w-[45%] lg:absolute lg:-bottom-10 lg:right-32  overflow-hidden " data-aos="fade-right">
+          <img src={crash4} alt="" className=' ' />
         </div>
 
         {/* Section 2 */}
@@ -73,7 +69,7 @@ const Home = () => {
             alt="Background"
             className="z-0 h-[105vh] lg:w-50%  w-full md:h-[100vh] lg:h-[110vh] object-cover"
           />
-          <div className="p-8 mx-auto absolute inset-0 text-white bg-black/50 md:p-12 lg:p-16">
+          <div className="p-8 mx-auto  text-white bg-black/50 md:p-12 lg:p-16">
             {/* Mobile and Medium Screens: Stack text above the image */}
             <div className="block lg:hidden">
               {/* Mobile Text Content */}

@@ -3,6 +3,7 @@ import SimpleNavbar from '../Component/Simplenav'
 import Filters from '../Component/Filter'
 import CardLayout from '../Component/Cardlayout'
 import Footer from '../Component/Footer'
+import Questions from '../Component/Questions'
 
 const Events = () => {
   return (
@@ -16,10 +17,11 @@ const Events = () => {
         </div>
         <Filters/>
       </div>
-      <div className='w-[180vh] mx-auto'>
+      <div className='w-[80%] mx-auto border border-white'>
         <CardLayout/>
       </div>
       <div className='mt-28'>
+        <Questions/>
         <Footer/>
       </div>
     </div>

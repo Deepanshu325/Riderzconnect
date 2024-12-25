@@ -18,6 +18,8 @@ import Clubhistory from './Pages/Clubhistory';
 import OurMISSIONS from './Pages/OurMISSIONS';
 import OurMembers from './Pages/OurMembers';
 import GridStyle from './Pages/GridStyle';
+import News from './Pages/News';
+import GridStylecard from './Pages/GridStylecard';
 
 function App() {
   return (
@@ -41,6 +43,9 @@ function App() {
         <Route path="about-club/our-members" element={<OurMembers/>}/>
         <Route path="rides" element={<GridStyle/>}/>
         <Route path="rides/grid-style" element={<GridStyle/>}/>
+        <Route path="news" element={<News/>}/>
+        <Route path="news/single-news" element={<News/>}/>
+        <Route path="rides/grid-style/grid" element={<GridStylecard/>}/>
 
       </Routes>
     </div>

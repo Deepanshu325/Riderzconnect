@@ -45,7 +45,7 @@ const NavigationBar = () => {
     { label: 'SHOP', link: '/shop', subOptions: ['Merchandise', 'Accessories'] },
     { label: 'EVENTS', link: '/events', subOptions: ['Upcoming Events', 'Past Events'] },
     { label: 'MEDIA', link: '/media', subOptions: ['Photos', 'Videos'] },
-    { label: 'NEWS', link: '/news', subOptions: ['Latest News', 'Club Updates'] },
+    { label: 'NEWS', link: '/news', subOptions: ['Single News'] },
     { label: 'PAGES', link: '/pages', subOptions: ['Contact Us', 'FAQ'] },
   ];
 

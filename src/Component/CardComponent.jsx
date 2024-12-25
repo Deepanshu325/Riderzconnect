@@ -1,5 +1,6 @@
 import React from "react";
 import image from "../Assets/gallery-8.jpg"
+import { Link } from "react-router-dom";
 
 const cards = [
   {
@@ -78,7 +79,7 @@ const CardComponent = () => {
               </div>
             </div>
             <div className="p-8">
-              <h3 className="text-2xl font-bold text-gray-800 ">{card.title}</h3>
+            <Link to="grid"><h3 className="text-2xl font-bold text-gray-800 hover:text-yellow-500">{card.title}</h3></Link>  
               <p className="text-gray-600 text-lg mt-6">{card.description}</p>
             </div>
           </div>
