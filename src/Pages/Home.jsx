@@ -221,11 +221,11 @@ const Home = () => {
               <h2 className="text-4xl lg:text-5xl font-bold mt-2">
                 PLAN YOUR <br />ADVENTURE
               </h2>
-              <p className="text-gray-300 mt-4">
+              <p className="text-gray-300 mt-4 pr-2">
               Plan and customize different routes for tomorrows adventures
               </p>
 
-              <p className="text-gray-300 mt-4">
+              <p className="text-gray-300 mt-4 pr-2">
               Our Trip Planner makes it easy finding the best roads to your destination
               </p>
              

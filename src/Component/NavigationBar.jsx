@@ -69,7 +69,7 @@ const NavigationBar = () => {
             </div>
 
             {/* Center Section - Desktop Menu */}
-            <div className="hidden md:flex w-[70%] items-center justify-center space-x-4">
+            <div className="hidden lg:flex w-[70%] items-center justify-center space-x-4">
               <ul className="flex space-x-4">
                 {menuItems.map((menu, index) => (
                   <li key={index} className="relative">
@@ -111,7 +111,7 @@ const NavigationBar = () => {
             </div>
 
             {/* Right Section - Signup Button */}
-            <div className="hidden md:flex">
+            <div className="hidden lg:flex">
               <Link
                 to="/signup"
                 className="bg-yellow-500 text-white px-4 py-2 rounded-md hover:bg-yellow-600 text-sm font-medium"
@@ -121,7 +121,7 @@ const NavigationBar = () => {
             </div>
 
             {/* Mobile Menu - Hamburger Button */}
-            <div className="md:hidden flex items-center">
+            <div className="lg:hidden flex items-center">
               <button
                 onClick={toggleMobileMenu}
                 className="text-white hover:bg-gray-700 px-3 py-2 rounded-md text-xl"
@@ -133,7 +133,7 @@ const NavigationBar = () => {
 
           {/* Mobile Menu Dropdown */}
           <div
-            className={`md:hidden transition-all ${mobileMenuOpen ? 'max-h-screen' : 'max-h-0'} overflow-hidden`}
+            className={`lg:hidden transition-all ${mobileMenuOpen ? 'max-h-screen' : 'max-h-0'} overflow-hidden`}
           >
             <div className="mt-2 rounded-md shadow-lg">
               <div className="py-1">

@@ -9,6 +9,9 @@ import OurGallery from '../Component/OurGallery'
 import Runningnumbers from '../Component/Runningnumbers'
 import Questions from '../Component/Questions'
 import Footer from '../Component/Footer'
+import Ourmissioncard from '../Component/Ourmissioncard'
+import Cardsgrid from "../Component/Cardsgrid"
+import RulesSection from '../Component/Rulesection'
 
 const OurMISSIONS = () => {
   return (
@@ -16,14 +19,9 @@ const OurMISSIONS = () => {
    <>
    <div className='overflow-hidden'>
      <ClubInfo name="OUR MISSION" background={image}/>
-     <MotorcycleClub/>
-     <OurRides/>
-     <MembershipSection/>
-     <Members/>
-     <div className=''>
-     <Runningnumbers/>
-     </div>
-     <OurGallery/>
+     <Ourmissioncard/>
+     <Cardsgrid/>
+     <RulesSection/>
      <Questions/>
      <Footer/>
      </div>

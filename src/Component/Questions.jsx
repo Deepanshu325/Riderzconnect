@@ -26,11 +26,11 @@ const Questions = () => {
           <div className='w-full flex flex-wrap gap-12 mt-16'>
             <div className="flex items-center">
               <FaPhone className="text-yellow-500 text-sm lg:text-xl mr-4" />
-              <span className="text-xl lg:text-3xl text-white" data-aos="fade-left">+1 234 567 890</span>
+              <span className="text-xl lg:text-3xl text-white" data-aos="fade-left">9818855952</span>
             </div>
             <div className="flex items-center">
               <FaEnvelope className="text-yellow-500 text-sm lg:text-xl mr-4" />
-              <span className=" text-xl lg:text-3xl text-white" data-aos="fade-left">example@example.com</span>
+              <span className=" text-xl lg:text-3xl text-white" data-aos="fade-left">admin@riderzconnect.com</span>
             </div>
           </div>
         </div>
@@ -38,11 +38,11 @@ const Questions = () => {
         {/* Middle Section */}
         <div className="flex-1 rounded-lg p-6 w-full md:max-w-[20%]">
           <h4 className="text-xl font-bold mb-10 text-white">HEAD OFFICE</h4>
-          <p className="mb-2 text-gray-400 font-semibold">Box 565,</p>
-          <p className="mb-2 text-gray-400 font-semibold">Charlestown, Nevis,</p>
-          <p className="mb-2 text-gray-400 font-semibold">West Indies,</p>
-          <p className="mb-2 text-gray-400 font-semibold">Caribbean</p>
-          <p className="mb-2 text-yellow-500 font-semibold">VIEW MAP</p>
+          <p className="mb-2 text-gray-400 font-semibold">PLOT NO 15,</p>
+          <p className="mb-2 text-gray-400 font-semibold">DLF PHASE 2,</p>
+          <p className="mb-2 text-gray-400 font-semibold">GURUGRAM,</p>
+          <p className="mb-2 text-gray-400 font-semibold">HARYANA-122002</p>
+         <a href="https://maps.app.goo.gl/dJEMKDDiu1jbQ5Gz5"><p className="mb-2 text-yellow-500 font-semibold">VIEW MAP</p></a> 
         </div>
 
         {/* Right Section */}
