@@ -8,6 +8,7 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 import Runningnumbers from "./Runningnumbers";
 import back from "../Assets/Background/SAFETY_2.jpg"
+import Ourmission from "./Ourmission";
 
 const UpcomingEvent = () => {
   AOS.init({
@@ -142,7 +143,7 @@ const UpcomingEvent = () => {
        
       </div>
       <Runningnumbers/>
-    
+      <Ourmission/>
       </div>
     </>
   );

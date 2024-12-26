@@ -20,9 +20,7 @@ const Home3 = () => {
      <div>
         <UpcomingEvent/>
      </div>
-     <div>
-        <Ourmission/>
-     </div>
+    
      <div>
       <Joinevent/>
      </div>
