@@ -14,6 +14,8 @@ import google from "../Assets/Icons/google.webp"
 import appstore from "../Assets/Icons/app_store.webp"
 import 'aos/dist/aos.css';
 import image from "../Assets/Background/SAFETY_1.jpg"
+import image2 from "../Assets/Background/Untitled_design_1.jpg"
+import { useEffect } from 'react';
 
 const Home = () => {
   AOS.init({
@@ -22,14 +24,39 @@ const Home = () => {
     offset: 200     // Offset distance in pixels (increase this for higher delay)
   });
 
+    const setResponsiveBackground = () => {
+      const div = document.getElementById('section1');
+      if (div) {
+        if (window.innerWidth <= 768) {
+          div.style.backgroundImage = `url(${image2})`;
+        } else {
+          div.style.backgroundImage = `url(${image})`;
+        }
+      }
+    };
+  
+    useEffect(() => {
+      // Set the background on component mount
+      setResponsiveBackground();
+  
+      // Update the background on window resize
+      window.addEventListener('resize', setResponsiveBackground);
+  
+      // Cleanup the event listener on component unmount
+      return () => {
+        window.removeEventListener('resize', setResponsiveBackground);
+      };
+    }, []);
+
   return (
     <>
     <div className='overflow-hidden'>
       {/* Section 1 */}
       <div
-      className="w-full h-auto min-h-screen"
+      id="section1"
+      className=" w-full h-auto min-h-screen "
       style={{
-        backgroundImage: `url(${image})`,
+       
         backgroundSize: '100% 100%', // Stretches image to fit div
     backgroundRepeat: 'no-repeat',// Ensures the whole image fits
      // Prevents the image from repeating
@@ -98,7 +125,7 @@ const Home = () => {
         <div className="mt-8 lg:mt-0 lg:ml-12 max-w-lg  lg:text-left text-yellow-500">
           <h1 className=" text-4xl font-semibold">02</h1>
           <h2 className="text-3xl lg:text-5xl font-bold mt-2 leading-snug">
-            Feel safe <br /> while riding
+            FEEL SAFE <br /> WHILE RIDING
           </h2>
           <p className="text-gray-300 mt-4">
             Automatic crash detection using algorithms that detect accidents. In
@@ -121,7 +148,7 @@ const Home = () => {
     {/* section3 */}
 
     <div
-      className="w-full h-auto min-h-screen"
+      className="w-full h-auto min-h-screen "
       style={{
         backgroundImage: `url(${back3})`,
         backgroundSize: '100% 100%', // Stretches image to fit div
@@ -201,14 +228,13 @@ const Home = () => {
         </div>
       </div>
 
-      {/* Decorative Orange Line */}
-      <div className="absolute top-0 right-0 w-24 lg:w-32 h-1 bg-orange-500"></div>
+     
     </section>
 
     
     {/* secction5 */}
     <div
-      className="w-full h-auto min-h-screen"
+      className="w-full h-auto min-h-screen bg-cover"
       style={{
         backgroundImage: `url(${back5})`,
         backgroundSize: '100% 100%', // Stretches image to fit div
