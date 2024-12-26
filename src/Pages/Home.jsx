@@ -162,8 +162,7 @@ const Home = () => {
         </div>
       </div>
 
-      {/* Decorative Orange Line */}
-      <div className="absolute top-0 right-0 w-24 lg:w-32 h-1 bg-orange-500"></div>
+    
     </section>
 
 
