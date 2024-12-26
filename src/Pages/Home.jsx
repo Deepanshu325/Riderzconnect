@@ -3,6 +3,7 @@ import hero4 from "../Assets/Images/SAFETY (1).png"; // Ensure this path is corr
 import back3 from "../Assets/Background/SAFETY_3.jpg"
 import back5 from "../Assets/Background/SAFETY_5.jpg"
 import back6 from "../Assets/Background/Untitled_design_5.jpg"
+import back7 from "../Assets/Background/Untitled_design_2.jpg"
 import Footer from '../Component/Footer';
 import Questions from '../Component/Questions';
 import AOS from 'aos';
@@ -72,6 +73,34 @@ const Home = () => {
       // Cleanup the event listener on component unmount
       return () => {
         window.removeEventListener('resize', setResponsiveBackground2);
+      };
+    }, []);
+
+
+
+
+    
+    const setResponsiveBackground3 = () => {
+      const div = document.getElementById('section3');
+      if (div) {
+        if (window.innerWidth <= 768) {
+          div.style.backgroundImage =  `url(${back7})`;
+        } else {
+          div.style.backgroundImage =  `url(${back3})`;
+        }
+      }
+    };
+  
+    useEffect(() => {
+      // Set the background on component mount
+      setResponsiveBackground3();
+  
+      // Update the background on window resize
+      window.addEventListener('resize', setResponsiveBackground3);
+  
+      // Cleanup the event listener on component unmount
+      return () => {
+        window.removeEventListener('resize', setResponsiveBackground3);
       };
     }, []);
 
@@ -175,8 +204,9 @@ const Home = () => {
 
     <div
       className="w-full h-auto min-h-screen "
+      id="section3"
       style={{
-        backgroundImage: `url(${back3})`,
+       
         backgroundSize: '100% 100%', // Stretches image to fit div
     backgroundRepeat: 'no-repeat',// Ensures the whole image fits
      // Prevents the image from repeating
