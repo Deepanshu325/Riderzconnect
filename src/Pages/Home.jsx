@@ -2,6 +2,7 @@ import React from 'react';
 import hero4 from "../Assets/Images/SAFETY (1).png"; // Ensure this path is correct
 import back3 from "../Assets/Background/SAFETY_3.jpg"
 import back5 from "../Assets/Background/SAFETY_5.jpg"
+import back6 from "../Assets/Background/Untitled_design_5.jpg"
 import Footer from '../Component/Footer';
 import Questions from '../Component/Questions';
 import AOS from 'aos';
@@ -45,6 +46,32 @@ const Home = () => {
       // Cleanup the event listener on component unmount
       return () => {
         window.removeEventListener('resize', setResponsiveBackground);
+      };
+    }, []);
+
+
+
+    const setResponsiveBackground2 = () => {
+      const div = document.getElementById('section5');
+      if (div) {
+        if (window.innerWidth <= 768) {
+          div.style.backgroundImage =  `url(${back6})`;
+        } else {
+          div.style.backgroundImage =  `url(${back5})`;
+        }
+      }
+    };
+  
+    useEffect(() => {
+      // Set the background on component mount
+      setResponsiveBackground2();
+  
+      // Update the background on window resize
+      window.addEventListener('resize', setResponsiveBackground2);
+  
+      // Cleanup the event listener on component unmount
+      return () => {
+        window.removeEventListener('resize', setResponsiveBackground2);
       };
     }, []);
 
@@ -97,7 +124,7 @@ const Home = () => {
               <img
                 src={phone} // Replace with your actual image path
                 alt="Phone showing app screens"
-                className=" pt-24"
+                className=" lg:pt-24"
               />
             </div>
           </div>
@@ -180,7 +207,7 @@ const Home = () => {
               <img
                 src={phone3} // Replace with your actual image path
                 alt="Phone showing app screens"
-                className=" pt-20"
+                className=" lg:default:pt-20"
               />
             </div>
           </div>
@@ -235,8 +262,9 @@ const Home = () => {
     {/* secction5 */}
     <div
       className="w-full h-auto min-h-screen bg-cover"
+      id="section5"
       style={{
-        backgroundImage: `url(${back5})`,
+      
         backgroundSize: '100% 100%', // Stretches image to fit div
     backgroundRepeat: 'no-repeat',// Ensures the whole image fits
      // Prevents the image from repeating
@@ -268,7 +296,7 @@ const Home = () => {
               <img
                 src={phone5} // Replace with your actual image path
                 alt="Phone showing app screens"
-                className=" pt-20"
+                className=" lg:pt-20"
               />
             </div>
           </div>
