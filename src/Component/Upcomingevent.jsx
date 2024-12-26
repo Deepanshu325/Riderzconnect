@@ -7,6 +7,7 @@ import speedometer from "../Assets/Icons/speedometer.png"
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import Runningnumbers from "./Runningnumbers";
+import back from "../Assets/Background/SAFETY_2.jpg"
 
 const UpcomingEvent = () => {
   AOS.init({
@@ -97,7 +98,9 @@ const UpcomingEvent = () => {
 
   return (
     <>
-      <div className="w-full bg-black text-white flex flex-col lg:flex-row items-center content-center lg:items-start lg:justify-between p-6 lg:p-12 space-y-6 lg:space-y-0 max-h-[60vh]">
+    <div style={{background :`url(${back})`, backgroundRepeat:"no-repeat", backgroundSize: "cover"}} className="w-full"
+    >
+      <div className="w-full text-white flex flex-col lg:flex-row items-center content-center lg:items-start lg:justify-between p-6 lg:p-12 space-y-6 lg:space-y-0 max-w-7xl mx-auto">
         {/* Left Section */}
         <div className="flex flex-col space-y-4 text-center lg:text-left">
           <h1 className="text-4xl lg:text-3xl font-bold" data-aos="fade-up">UPCOMING EVENT</h1>
@@ -135,9 +138,12 @@ const UpcomingEvent = () => {
             </div>
           </div>
         </div>
-      </div>
 
+       
+      </div>
       <Runningnumbers/>
+    
+      </div>
     </>
   );
 };

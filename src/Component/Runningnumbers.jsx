@@ -7,7 +7,8 @@ import speedometer from "../Assets/Icons/speedometer.png"
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { useState , useEffect } from 'react'
-
+import back from "../Assets/Background/SAFETY_2.jpg"
+import Upcomingevents from "../Component/Upcomingevent"
 const Runningnumbers = () => {
 
     AOS.init({
@@ -98,7 +99,12 @@ const Runningnumbers = () => {
 
 
   return (
-    <div className="w-full h-auto bg-black/95 bg-cover bg-center bg-opacity-15 flex items-center justify-center py-12 mt-28 lg:mt-0">
+   
+
+    <div className="w-full  bg-cover bg-center bg-opacity-15 flex items-center justify-center py-12 mt-28 lg:mt-0 " 
+   >
+
+             
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 text-center">
           {events.map((event, index) => (
             <div

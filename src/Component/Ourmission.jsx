@@ -18,7 +18,7 @@ const Ourmission = () => {
 
 
   return (
-    <div className='bg-black/90 w-full min-h-screen pb-16'>
+    <div className='bg-black/90 w-full min-h-screen pb-16 max-w-7xl mx-auto'>
       <div>
         <h1 className='text-white text-center pt-32 font-bold mb-4' data-aos="fade-up">WHAT WE DO</h1>
         <p className='text-white text-center text-6xl font-bold' data-aos="fade-down">OUR MISSIONS</p>
