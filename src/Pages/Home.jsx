@@ -2,7 +2,7 @@ import React from 'react';
 import hero4 from "../Assets/Images/SAFETY (1).png"; // Ensure this path is correct
 import back3 from "../Assets/Background/SAFETY_3.jpg"
 import back5 from "../Assets/Background/SAFETY_5.jpg"
-import back6 from "../Assets/Background/Untitled_design_5.jpg"
+import back6 from "../Assets/Background/WhatsApp_Image_2024-12-26_at_1.35.05_PM.jpg"
 import back7 from "../Assets/Background/Untitled_design_2.jpg"
 import Footer from '../Component/Footer';
 import Questions from '../Component/Questions';
@@ -120,14 +120,14 @@ const Home = () => {
       }}
     >
              <div className="w-fit mx-auto  ">
-          <div className="container mx-auto flex flex-col lg:flex-row items-center justify-between">
+          <div className="container mx-auto flex flex-col lg:flex-row items-center justify-between ">
             {/* Text Section */}
-            <div className="ltext-left  lg:text-left max-w-lg lg:mr-12 text-yellow-500 mt-20 md:mt-32 lg:mt-0 ">
-              <h1 className=" text-4xl font-semibold">01</h1>
+            <div className="text-left ml-6 lg:text-left max-w-lg lg:mr-12 text-yellow-500 mt-20 md:mt-32 lg:mt-0 ">
+              <h1 className=" text-4xl font-semibold">#1</h1>
               <h2 className="text-4xl lg:text-5xl font-bold mt-2">
                 SAFETY<br />DISCOVERY<br />COMMUNITY
               </h2>
-              <p className="text-gray-400 mt-4">
+              <p className="text-gray-300 mt-4 ">
                 The lifesaving motorcycle app that will take your riding to the next level
               </p>
               <div className="flex items-center justify-center lg:justify-start mt-6 space-x-4">
@@ -179,7 +179,7 @@ const Home = () => {
 
         {/* Text Section */}
         <div className="mt-8 lg:mt-0 lg:ml-12 max-w-lg  lg:text-left text-yellow-500">
-          <h1 className=" text-4xl font-semibold">02</h1>
+          <h1 className=" text-4xl font-semibold">#2</h1>
           <h2 className="text-3xl lg:text-5xl font-bold mt-2 leading-snug">
             FEEL SAFE <br /> WHILE RIDING
           </h2>
@@ -216,16 +216,16 @@ const Home = () => {
              <div className="w-fit mx-auto  ">
           <div className="container mx-auto flex flex-col lg:flex-row items-center justify-between">
             {/* Text Section */}
-            <div className="ltext-left  lg:text-left max-w-lg lg:mr-12 text-yellow-500">
-              <h1 className=" text-4xl font-semibold">03</h1>
+            <div className="ltext-left ml-6 lg:text-left max-w-lg lg:mr-12 text-yellow-500">
+              <h1 className=" text-4xl font-semibold">#3</h1>
               <h2 className="text-4xl lg:text-5xl font-bold mt-2">
                 PLAN YOUR <br />ADVENTURE
               </h2>
-              <p className="text-gray-400 mt-4">
+              <p className="text-gray-300 mt-4">
               Plan and customize different routes for tomorrows adventures
               </p>
 
-              <p className="text-gray-400 mt-4">
+              <p className="text-gray-300 mt-4">
               Our Trip Planner makes it easy finding the best roads to your destination
               </p>
              
@@ -265,7 +265,7 @@ const Home = () => {
 
         {/* Text Section */}
         <div className="mt-8 lg:mt-0 lg:ml-12 max-w-lg  lg:text-left text-yellow-500">
-          <h1 className=" text-4xl font-semibold">04</h1>
+          <h1 className=" text-4xl font-semibold">#4</h1>
           <h2 className="text-3xl lg:text-5xl font-bold mt-2 leading-snug">
             EXPLORE YOUR <br /> SURROUNDINGS
           </h2>
@@ -303,16 +303,16 @@ const Home = () => {
              <div className="w-fit mx-auto   ">
           <div className="container mx-auto flex flex-col lg:flex-row-reverse items-center justify-between">
             {/* Text Section */}
-            <div className="ltext-left  lg:text-left max-w-lg lg:mr-12 text-yellow-500">
-              <h1 className=" text-4xl font-semibold">05</h1>
+            <div className="ltext-left ml-6 lg:text-left max-w-lg lg:mr-12 text-yellow-500">
+              <h1 className=" text-4xl font-semibold">#5</h1>
               <h2 className="text-4xl lg:text-5xl font-bold mt-2">
                 TRACK YOUR <br />PROGRESS
               </h2>
-              <p className="text-gray-400 mt-4">
+              <p className="text-gray-300 mt-4">
               Get statistics for your rides and develop your driver profile
               </p>
 
-              <p className="text-gray-400 mt-4">
+              <p className="text-gray-300 mt-4">
               Plan your upcoming trips with your friends or share ride tips in the chat
 
 
