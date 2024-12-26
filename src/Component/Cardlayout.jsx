@@ -71,7 +71,7 @@ const CardLayout = () => {
   ];
 
   return (
-    <div className="p-6  min-h-screen">
+    <div className="p-6  min-h-screen ">
      
       <div className="grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-3 gap-6">
         {cards.map((card, index) => (

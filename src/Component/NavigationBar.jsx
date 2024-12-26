@@ -43,7 +43,7 @@ const NavigationBar = () => {
     { label: 'ABOUT CLUB', link: '/about-club', subOptions: ['CLUB INFO','CLUB HISTORY','OUR MISSION','OUR MEMBERS'] },
     { label: 'RIDING REPORT', link: '/rides', subOptions: ['Grid Style'] },
     { label: 'SHOP', link: '/shop', subOptions: ['Merchandise', 'Accessories'] },
-    { label: 'EVENTS', link: '/events', subOptions: ['Upcoming Events', 'Past Events'] },
+    { label: 'RIDES', link: '/events', subOptions: ['Upcoming Events', 'Past Events'] },
     { label: 'MEDIA', link: '/media', subOptions: ['Photos', 'Videos'] },
     { label: 'NEWS', link: '/news', subOptions: ['Single News'] },
     { label: 'PAGES', link: '/pages', subOptions: ['Contact Us', 'FAQ'] },
@@ -53,7 +53,7 @@ const NavigationBar = () => {
     <div className="bg-white">
       {/* Navbar */}
       <nav
-        className={`bg-black/60 opacity-80 text-white z-50 fixed w-full top-0 left-0 transition-all duration-300 ${navbarVisible ? 'translate-y-0' : '-translate-y-28'}`}
+        className={`bg-black/60 opacity-90 text-white z-50 fixed w-full top-0 left-0 transition-all duration-300 ${navbarVisible ? 'translate-y-0' : '-translate-y-28'}`}
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-2">
           <div className="flex justify-between items-center h-20 md:h-32">
@@ -156,7 +156,7 @@ const NavigationBar = () => {
                       )}
                     </div>
                     {expandedMenus[menu.label] && (
-                      <ul className="bg-gray-800">
+                      <ul className="bg-black">
                         {menu.subOptions.map((option, subIndex) => (
                           <li key={subIndex}>
                             <Link

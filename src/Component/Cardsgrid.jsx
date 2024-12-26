@@ -3,37 +3,37 @@ import React from "react";
 const Cardsgrid = () => {
   const cards = [
     {
-      id: "01",
+      id: "#1",
       title: "PURPOSE",
       content:
         "To make motorcycling communities, as well as the public at large, aware that people are serious motorcyclists and deserve such recognition.",
     },
     {
-      id: "02",
+      id: "#2",
       title: "UNITY",
       content:
         "To unite with various organizations for the purpose of supporting charitable functions, and the improved communities such deserve.",
     },
     {
-      id: "03",
+      id: "#3",
       title: "LEADERSHIP",
       content:
         "To lead our youth towards a positive direction such that life may be successful without drugs and violence such recognition.",
     },
     {
-      id: "04",
+      id: "#4",
       title: "EDUCATION",
       content:
         "To make available, information on safe courses and to provide assistance to novice riders, through mentoring of good sportsmanship and motorcycle.",
     },
     {
-      id: "05",
+      id: "#5",
       title: "ENCOURAGEMENT",
       content:
         "To show everyone, that they have limitless potential and can accomplish any goal or dream of good sportsmanship and motorcycle responsibility.",
     },
     {
-      id: "06",
+      id: "#6",
       title: "RECREATION",
       content:
         "To enhance the sheer enjoyment of motorcycling while maintaining the integrity of good sportsmanship and motorcycle responsibility.",
@@ -46,13 +46,13 @@ const Cardsgrid = () => {
         {cards.map((card) => (
           <div
             key={card.id}
-            className="bg-white text-black p-12 rounded-lg shadow-lg relative border border-gray-200 "
+            className="bg-yellow-500 text-black p-12 rounded-lg shadow-lg relative border border-yellow-500  "
           >
-            <div className="text-red-600 text-3xl font-bold ">
+            <div className="text-black text-3xl  font-bold ">
               {card.id}
             </div>
-            <h2 className="text-xl font-bold mb-10 mt-20">{card.title}</h2>
-            <p className="text-gray-700">{card.content}</p>
+            <h2 className="text-xl lg:text-2xl font-bold mb-10 mt-20">{card.title}</h2>
+            <p className="text-black">{card.content}</p>
             <div className="absolute inset-0 bg-no-repeat bg-bottom opacity-10 pointer-events-none">
               <svg
                 xmlns="http://www.w3.org/2000/svg"

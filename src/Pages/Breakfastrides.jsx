@@ -17,7 +17,7 @@ const Breakfastrides = () => {
         </div>
         <Filters/>
       </div>
-      <div className='lg:w-[180vh] lg:mx-auto'>
+      <div className='max-w-8xl mx-auto'>
         <CardLayout/>
       </div>
       </div>
