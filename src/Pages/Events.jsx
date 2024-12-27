@@ -17,7 +17,7 @@ const Events = () => {
         </div>
         <Filters/>
       </div>
-      <div className='w-[80%] mx-auto border border-white'>
+      <div className=' mx-auto border border-white overflow-hidden'>
         <CardLayout/>
       </div>
       <div className='mt-28'>

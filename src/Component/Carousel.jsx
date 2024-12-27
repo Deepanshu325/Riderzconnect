@@ -30,7 +30,7 @@ const Carousel = () => {
   }, []);
 
   return (
-    <div className="overflow-hidden w-full">
+    <div className="overflow-hidden w-[98%] md:w-full">
       <div
         className="flex flex-wrap gap-4 justify-center"  // Adjusts layout for small screens
         ref={carouselRef}

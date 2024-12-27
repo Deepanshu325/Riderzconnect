@@ -216,7 +216,7 @@ const Home = () => {
              <div className="w-fit mx-auto  ">
           <div className="container mx-auto flex flex-col lg:flex-row items-center justify-between">
             {/* Text Section */}
-            <div className="ltext-left ml-6 lg:text-left max-w-lg lg:mr-12 text-yellow-500">
+            <div className="ltext-left ml-6 lg:text-left max-w-lg lg:mr-12 text-yellow-500 mt-20 lg:mt-0">
               <h1 className=" text-4xl font-semibold">#3</h1>
               <h2 className="text-4xl lg:text-5xl font-bold mt-2">
                 PLAN YOUR <br />ADVENTURE
@@ -303,7 +303,7 @@ const Home = () => {
              <div className="w-fit mx-auto   ">
           <div className="container mx-auto flex flex-col lg:flex-row-reverse items-center justify-between">
             {/* Text Section */}
-            <div className="ltext-left ml-6 lg:text-left max-w-lg lg:mr-12 text-yellow-500">
+            <div className="ltext-left ml-6 lg:text-left max-w-lg lg:mr-12 text-yellow-500 mt-20 lg:mt-0">
               <h1 className=" text-4xl font-semibold">#5</h1>
               <h2 className="text-4xl lg:text-5xl font-bold mt-2">
                 TRACK YOUR <br />PROGRESS

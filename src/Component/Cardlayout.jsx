@@ -7,7 +7,7 @@ import image4 from "../Assets/Images/WhatsApp Image 2024-12-16 at 5.54.51 PM.jpe
 import image5 from "../Assets/Images/WhatsApp Image 2024-12-16 at 5.55.51 PM (2).jpeg"
 const Card = ({ image, title, price }) => {
   return (
-    <div className="bg-black text-white  shadow-lg  flex flex-col">
+    <div className="bg-black text-white  shadow-lg  flex flex-col ">
       {/* Image Section */}
       <div className="relative overflow-hidden rounded-t-2xl   ">
         <img
@@ -73,7 +73,7 @@ const CardLayout = () => {
   return (
     <div className="p-6  min-h-screen ">
      
-      <div className="grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-3 gap-6">
+      <div className=" grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-3 gap-6">
         {cards.map((card, index) => (
     <Link to="/adventure1"><Card
             key={index}

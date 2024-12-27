@@ -61,7 +61,7 @@ const Review = () => {
       </div>
 
       {/* Right Div */}
-      <div className="w-full lg:w-1/2 p-8 lg:p-24 flex flex-col" data-aos="fade-left">
+      <div className="w-full lg:w-1/2 p-1 pt-4 lg:pt-0 lg:p-24 flex flex-col" data-aos="fade-left">
         {/* Top Heading */}
         <h3 className="text-sm uppercase tracking-widest text-black font-bold mb-2">TESTIMONIALS</h3>
 

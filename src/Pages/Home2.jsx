@@ -17,7 +17,7 @@ const Home2 = () => {
 </div>
 
 </div>
-<div  className="min-h-fit flex items-center justify-center pl-16 pr-16 pb-32 lg:pb-0 mb-32">
+<div  className="min-h-fit flex items-center justify-center  pb-32 lg:pb-0 mb-32 ">
 <Carousel/>
 </div>
 <div>
