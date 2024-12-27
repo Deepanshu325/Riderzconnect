@@ -9,6 +9,7 @@ import 'aos/dist/aos.css';
 import Runningnumbers from "./Runningnumbers";
 import back from "../Assets/Background/SAFETY_2.jpg"
 import Ourmission from "./Ourmission";
+import back2 from "../Assets/Background/WhatsApp Image 2024-12-27 at 6.04.34 PM.jpg"
 
 const UpcomingEvent = () => {
   AOS.init({
@@ -97,9 +98,35 @@ const UpcomingEvent = () => {
     return () => observer.disconnect();
   }, []);
 
+
+  const setResponsiveBackground = () => {
+    const div = document.getElementById('section1');
+    if (div) {
+      if (window.innerWidth <= 768) {
+        div.style.backgroundImage = `url(${back2})`;
+      } else {
+        div.style.backgroundImage = `url(${back})`;
+      }
+    }
+  };
+
+  useEffect(() => {
+    // Set the background on component mount
+    setResponsiveBackground();
+
+    // Update the background on window resize
+    window.addEventListener('resize', setResponsiveBackground);
+
+    // Cleanup the event listener on component unmount
+    return () => {
+      window.removeEventListener('resize', setResponsiveBackground);
+    };
+  }, []);
+
+
   return (
     <>
-    <div style={{background :`url(${back})`, backgroundRepeat:"no-repeat", backgroundSize: "cover"}} className="w-full"
+    <div id="section1" style={{ backgroundRepeat:"no-repeat", backgroundSize: "100% 100%"}} className="w-full"
     >
       <div className="w-full text-white flex flex-col lg:flex-row items-center content-center lg:items-start lg:justify-between p-6 lg:p-12 space-y-6 lg:space-y-0 max-w-7xl mx-auto">
         {/* Left Section */}
