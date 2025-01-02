@@ -13,7 +13,7 @@ const Card = ({ image, title, price }) => {
         <img
           src={image}
           alt={title}
-          className="w-full h-60 object-cover"
+          className="w-full h-60 2xl:h-96 object-cover"
         />
         {/* Save Button */}
         <button className="absolute top-2 right-2 bg-black/80 text-white text-xs px-3 py-1 rounded-md hover:bg-red-500 transition">

@@ -3,7 +3,6 @@ import './App.css';
 import { BrowserRouter, Routes } from 'react-router-dom';
 import { Route } from 'react-router-dom';
 import Home from './Pages/Home';
-import Home2 from './Pages/Home2';
 import NavigationBar from './Component/NavigationBar';
 import Breakfastrides from './Pages/Breakfastrides';
 import Events from './Pages/Events';
@@ -29,7 +28,7 @@ function App() {
       <ClickToTop/>
       <Routes>
         <Route path="/" element={<Home/>}/>
-        <Route path="/events" element={<Home2/>}/>
+       
         <Route path="/home" element={<Home3/>}/>
         <Route path="/breakfastrides" element={<Breakfastrides/>}/>
         <Route path="/events" element={<Events/>}/>

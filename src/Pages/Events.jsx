@@ -1,31 +1,33 @@
 import React from 'react'
-import SimpleNavbar from '../Component/Simplenav'
-import Filters from '../Component/Filter'
-import CardLayout from '../Component/Cardlayout'
+import Hero from '../Component/Hero'
+import Name from '../Component/Name'
+import Carousel from '../Component/Carousel'
 import Footer from '../Component/Footer'
-import Questions from '../Component/Questions'
+
 
 const Events = () => {
   return (
-    <div className='w-full bg-black'>
-        <div className='w-1/2 mx-auto '>
-      <SimpleNavbar name="Events"/>
-      </div>
-      <div className='w-[180vh] mx-auto'>
-        <div>
-          <h1 className='text-white font-bold pl-6 text-lg'>Showing all 5 results</h1>
-        </div>
-        <Filters/>
-      </div>
-      <div className=' mx-auto border border-white overflow-hidden'>
-        <CardLayout/>
-      </div>
-      <div className='mt-28'>
-        <Questions/>
-        <Footer/>
-      </div>
-    </div>
+    <>
+    <div className='bg-black'>
+    <div className='bg-black '>
+<Hero/>
+
+<div className='mt-10 md:mb-10 lg:mb-0 '>
+<Name/>
+</div>
+
+</div>
+<div  className="min-h-fit flex items-center justify-center  pb-32 lg:pb-0 mb-32 ">
+<Carousel/>
+</div>
+<div>
+    <Footer/>
+</div>
+</div>
+
+</>
+
   )
 }
 
-export default Events;
+export default Events

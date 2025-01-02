@@ -41,23 +41,23 @@ const RatingContainer = () => {
         {/* Rating Divs */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:flex lg:flex-row gap-1">
           {/* First Row - 3 Divs */}
-          <div className="flex items-center max-w-44 bg-black/80 pl-2 pr-2 pt-1 pb-1 rounded-lg">
-            <FaStar className="text-orange-500 text-xl mr-4" />
-            <span className="text-base font-medium">Excellent Service</span>
+          <div className="flex items-center max-w-44 bg-black/80 pl-1 pr-1 pt-1 pb-1 rounded-lg">
+            <FaStar className="text-orange-500 text-lg mr-2" />
+            <span className="text-sm font-medium">Excellent Service</span>
           </div>
-          <div className="flex items-center max-w-fit bg-black/80 pl-2 pr-2 pt-1 pb-1 rounded-lg">
-            <FaRegMoneyBillAlt className="text-green-500 text-xl mr-4" />
-            <span className="text-base font-medium">Affordable Price</span>
+          <div className="flex items-center max-w-fit bg-black/80 pl-1 pr-1 pt-1 pb-1 rounded-lg">
+            <FaRegMoneyBillAlt className="text-green-500 text-lg mr-2" />
+            <span className="text-sm font-medium">Affordable Price</span>
           </div>
-          <div className="flex items-center max-w-fit  bg-black/80 pl-2 pr-2 pt-1 pb-1 rounded-lg">
-            <FaRegSmile className="text-yellow-400 text-xl mr-4" />
-            <span className="text-base font-medium">Friendly Staff</span>
+          <div className="flex items-center max-w-fit  bg-black/80 pl-1 pr-1 pt-1 pb-1 rounded-lg">
+            <FaRegSmile className="text-yellow-400 text-lg mr-2" />
+            <span className="text-sm font-medium">Friendly Staff</span>
           </div>
 
           {/* Second Row - 1 Div */}
-          <div className="flex items-center max-w-fit bg-black/80 pl-2 pr-2 pt-1 pb-1 rounded-lg">
-            <FaStar className="text-orange-500 text-xl mr-4" />
-            <span className="text-base font-medium">Highly Recommended</span>
+          <div className="flex items-center max-w-fit bg-black/80 pl-1 pr-1 pt-1 pb-1 rounded-lg">
+            <FaStar className="text-orange-500 text-lg mr-2" />
+            <span className="text-sm font-medium">Highly Recommended</span>
           </div>
         </div>
       </div>

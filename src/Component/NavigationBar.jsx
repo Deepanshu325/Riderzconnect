@@ -81,12 +81,12 @@ const NavigationBar = () => {
                         {menu.label}
                       </Link>
                       {menu.subOptions.length > 0 && (
-                        <button
+                        <span
                           onClick={() => toggleExpand(menu.label)}
                           className="text-white ml-2 focus:outline-none"
                         >
                           {expandedMenus[menu.label] ? '▲' : '▼'}
-                        </button>
+                        </span>
                       )}
                     </div>
 
@@ -122,12 +122,13 @@ const NavigationBar = () => {
 
             {/* Mobile Menu - Hamburger Button */}
             <div className="lg:hidden flex items-center">
-              <button
+              <span
                 onClick={toggleMobileMenu}
                 className="text-white hover:bg-gray-700 px-3 py-2 rounded-md text-xl"
               >
                 ☰ {/* Hamburger Menu */}
-              </button>
+              </span
+              >
             </div>
           </div>
 

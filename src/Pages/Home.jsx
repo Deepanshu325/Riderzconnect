@@ -1,13 +1,13 @@
 import React from 'react';
 import hero4 from "../Assets/Images/SAFETY (1).png"; // Ensure this path is correct
-import back3 from "../Assets/Background/SAFETY_3.jpg"
-import back5 from "../Assets/Background/SAFETY_5.jpg"
+import back3 from "../Assets/Background/2.jpg"
+import back5 from "../Assets/Background/3.jpg"
 import back6 from "../Assets/Background/WhatsApp_Image_2024-12-26_at_1.35.05_PM.jpg"
 import back7 from "../Assets/Background/Untitled_design_2.jpg"
 import Footer from '../Component/Footer';
 import Questions from '../Component/Questions';
 import AOS from 'aos';
-import phone from "../Assets/phone/2 (1).png"
+import phone from "../Assets/phone/1 (2).png"
 import phone2 from "../Assets/phone/1 (1).png"
 import phone3 from "../Assets/phone/3 (1).png"
 import phone4 from "../Assets/phone/4 (1).png"
@@ -15,7 +15,7 @@ import phone5 from "../Assets/phone/5 (2).png"
 import google from "../Assets/Icons/google.webp"
 import appstore from "../Assets/Icons/app_store.webp"
 import 'aos/dist/aos.css';
-import image from "../Assets/Background/SAFETY_1.jpg"
+import image from "../Assets/Images/1.jpg"
 import image2 from "../Assets/Background/Untitled_design_1.jpg"
 import { useEffect } from 'react';
 

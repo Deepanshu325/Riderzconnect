@@ -19,7 +19,7 @@ const UpcomingEvent = () => {
   });
 
   // Set the countdown target date
-  const targetDate = new Date("2024-12-31T23:59:59").getTime();
+  const targetDate = new Date("2025-01-31T23:59:59").getTime();
 
   const [timeLeft, setTimeLeft] = useState({
     DAYS: 0,
@@ -150,16 +150,17 @@ const UpcomingEvent = () => {
         {/* Right Section */}
         <div className="bg-white p-6 lg:p-10 w-full lg:w-auto rounded-md">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 " data-aos="fade-left">
-            <iframe
-              width="100%"
-              height="auto"
-              src="https://www.youtube.com/embed/FKVLsoKGV6w?si=sPNwE87BxMJQYsjI&autoplay=1&controls=0"
-              title="YouTube video player"
-              frameBorder="0"
-              allow="encrypted-media"
-              referrerPolicy="strict-origin-when-cross-origin"
-              allowFullScreen
-            ></iframe>
+          <iframe
+  width="100%"
+  height="auto"
+  src="https://www.youtube.com/embed/FKVLsoKGV6w?si=sPNwE87BxMJQYsjI&autoplay=1&controls=0&modestbranding=1"
+  title="YouTube video player"
+  frameBorder="0"
+  allow="encrypted-media"
+  referrerPolicy="strict-origin-when-cross-origin"
+  allowFullScreen
+></iframe>
+
             <div className="pl-4 lg:pl-10" data-aos="fade-left">
               <h1 className="text-2xl font-bold text-black">WATCH US IN ACTION</h1>
               <p className="text-lg text-yellow-400 font-bold">MORE PHOTOS & VIDEOS</p>

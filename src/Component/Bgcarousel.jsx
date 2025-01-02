@@ -2,9 +2,9 @@ import React, { useState } from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import image1 from "../Assets/Images/1.png";
-import image2 from "../Assets/Images/2.png";
-import image3 from "../Assets/Images/3.png";
+import image1 from "../Assets/Images/15.jpg";
+import image2 from "../Assets/Images/16.jpg";
+import image3 from "../Assets/Images/14.jpg";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
@@ -60,15 +60,15 @@ const Bgcarousel = () => {
         </Slider>
 
         {/* Custom Navigation buttons */}
-        <div className="absolute md:bottom-28 bottom-24 lg:bottom-48 left-4 right-4 flex justify-between transform -translate-y-1/2 z-10" data-aos="fade-up">
+        <div className="absolute md:bottom-28 bottom-24 lg:bottom-48 left-4 right-4 flex justify-between transform -translate-y-1/2 z-30" data-aos="fade-up">
           <button
-            className="text-white bg-opacity-50 p-3 sm:p-4 rounded-full text-4xl sm:text-5xl"
+            className="text-white bg-opacity-50 p-3 sm:p-4 rounded-full text-4xl sm:text-5xl cursor-pointer"
             onClick={() => sliderRef.current.slickPrev()} // Go to previous slide
           >
             ⟨ {/* Left arrow */}
           </button>
           <button
-            className="text-white bg-opacity-50 p-3 sm:p-4 rounded-full text-4xl sm:text-5xl"
+            className="text-white bg-opacity-50 p-3 sm:p-4 rounded-full text-4xl sm:text-5xl cursor-pointer"
             onClick={() => sliderRef.current.slickNext()} // Go to next slide
           >
             ⟩ {/* Right arrow */}
